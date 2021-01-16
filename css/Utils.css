@@ -1,0 +1,185 @@
+/* - - - Padding Utils - - - */
+.p-0 { padding: 0px !important;}
+
+/* - - - Padding Top - - - */
+.pt-0 { padding-top: 0px !important;}
+
+.pt-1 { padding-top: 10px !important;}
+
+.pt-2 { padding-top: 20px !important;}
+
+.pt-3 { padding-top: 30px !important;}
+
+.pt-4 { padding-top: 40px !important;}
+
+.pt-5 { padding-top: 50px !important;}
+
+
+/* - - - Padding Bottom - - - */
+.pb-0 { padding-bottom: 0px !important;}
+
+.pb-1 { padding-bottom: 10px !important;}
+
+.pb-2 { padding-bottom: 20px !important;}
+
+.pb-3 { padding-bottom: 30px !important;}
+
+.pb-4 { padding-bottom: 40px !important;}
+
+.pb-5 { padding-bottom: 50px !important;}
+
+
+/* - - - Padding Left - - - */
+.pl-1 { padding-left: 10px !important;}
+
+.pl-2 { padding-left: 20px !important;}
+
+.pl-3 { padding-left: 30px !important;}
+
+.pl-4 { padding-left: 40px !important;}
+
+.pl-5 { padding-left: 50px !important;}
+
+
+/* - - - Padding Right - - - */
+.pr-1 { padding-right: 10px !important;}
+
+.pr-2 { padding-right: 20px !important;}
+
+.pr-3 { padding-right: 30px !important;}
+
+.pr-4 { padding-right: 40px !important;}
+
+.pr-5 { padding-right: 50px !important;}
+
+
+
+/* - - - Margins - - - */
+.m-0 { margin: 0 !important;}
+
+
+/* - - - Margin Bottom - - - */
+.mb-0 { margin-bottom: 0 !important;}
+
+.mb-1 { margin-bottom: 10px !important;}
+
+.mb-2 { margin-bottom: 20px !important;}
+
+.mb-3 { margin-bottom: 30px !important;}
+
+.mb-4 { margin-bottom: 40px !important;}
+
+.mb-5 { margin-bottom: 50px !important;}
+
+
+/* - - - Margin Top - - - */
+.mt-0 { margin-top: 0px !important;}
+
+.mt-1 { margin-top: 10px !important;}
+
+.mt-2 { margin-top: 20px !important;}
+
+.mt-3 { margin-top: 30px !important;}
+
+.mt-4 { margin-top: 40px !important;}
+
+.mt-5 { margin-top: 50px !important;}
+
+
+/* - - - Margin Right - - - */
+.mr-0 { margin-right: 0px !important;}
+
+.mr-1 { margin-right: 10px !important;}
+
+.mr-2 { margin-right: 20px !important;}
+
+.mr-3 { margin-right: 30px !important;}
+
+.mr-4 { margin-right: 40px !important;}
+
+.mr-5 { margin-right: 50px !important;}
+
+
+/* - - - Margin Left - - - */
+.ml-0 { margin-left: 0px !important;}
+
+.ml-1 { margin-left: 10px !important;}
+
+.ml-2 { margin-left: 20px !important;}
+
+.ml-3 { margin-left: 30px !important;}
+
+.ml-4 { margin-left: 40px !important;}
+
+.ml-5 { margin-left: 50px !important;}
+
+
+/* - - - Font Sizes - - - */
+.font-16 { font-size: 16px !important;}
+.font-18 { font-size: 18px !important;}
+.font-20 { font-size: 20px !important;}
+.font-22 { font-size: 22px !important;}
+.font-24 { font-size: 24px !important;}
+.font-26 { font-size: 26px !important;}
+.font-32 { font-size: 32px !important;}
+
+/* Add to buttons & fills cols to 100% */
+.f-width { width: 100%;}
+
+/* Align Text Left in full width buttons */
+.text-left { text-align: left!important;}
+
+/* Remove margin from p tags/ wrap in class */
+.r-mb p { margin-bottom: 0!important;}
+
+
+/* Utill Colours */
+.bg-grey { background: #f5f5f5;}
+.bg-primary { background: #3544B1!important;}
+.bg-white { background: #FFF;}
+
+.font-dark { color: #1d1d1d; }
+
+
+
+/* ==========================================================================
+		Equal Panel Size
+========================================================================== */
+
+@media (min-width: 992px) {
+    .equal {
+        display: flex;
+        display: -webkit-flex;
+		flex-wrap: wrap;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .panel {
+        flex: 1;
+    }
+	
+}
+
+
+/* Stops flex wrapping over two rows on Safari */
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+    @media {
+          .equal { 
+            display: block;
+			flex-wrap: none;
+        }
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+    @media {
+        .equal { 
+            display: block;
+			flex-wrap: none;
+        }
+    }
+}

@@ -1,0 +1,300 @@
+@media only screen and (max-width: 991px) {
+    
+    .navbar .mobileBrand {
+        padding: 12px 0;
+    }
+    
+    .topBranding img {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    /* Mobile Search Bar */
+    .btn-search {
+        background: transparent;
+        border: 0;
+        padding: 0;
+    }
+    
+    .navbar .fa-search {
+        color: white;
+        font-size: 22px;
+        padding: 20px;
+    }
+    
+    .mobile-modal .modal-content {
+        height: auto;
+        background: #3544B1;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+    }
+    
+    .mobile-modal .modal-dialog {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .modal-header .fa-times {
+        color: white;
+        opacity: 1;
+        text-shadow: none;
+    }
+    
+    .modal-header button.close {
+          color: white;
+        opacity: 1;
+        text-shadow: none;
+    }
+    
+    .form-inline .btn-white .far {
+        color: #3544B1;
+    }
+    
+    .form-inline .btn-white {
+        background: #FFF;
+        border: #FFF;
+        padding: 17px;
+        margin-left: 2px;
+    }
+    
+    
+    .mainArticle {
+      background-image: url("/media/lv2jmfnm/nes_site_header_2.png");
+      background-size: cover;
+      height: 350px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .navbar-toggler  p {
+       color: white;
+        font-size: 22px;
+        position: absolute;
+        right: 64px;
+        top: 17px;
+    }
+    
+    .navbar-nav .nav-item:first-child {
+        border-top: 2px solid #ffffff;
+    }
+    .newsArticle {
+        margin-bottom: 30px;
+    }
+    
+    .newsArticle p.date {
+        display: none;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+    
+    .navbar .fa-search {
+        color: white;
+        font-size: 22px;
+        padding: 20px;
+    }
+    
+    
+    .mobileSearch {
+        background: #FFF!important;
+    }
+    
+    .mobileSearch::placeholder {
+        font-size: 18px;
+        font-weight: 500;
+        color: #1d1d1d;
+    }
+    
+    .form-inline .btn-white {
+        background: #FFF;
+        border: #FFF;
+        padding: 17px;
+        margin-left: 2px;
+    }
+    
+    .form-inline .btn-white .far {
+       color: #3544B1;
+    }
+    
+    
+    
+    .navbar .mobileBrand {
+        padding: 12px 0;
+    }
+    
+    .topBranding img {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .filterLetter ul a {
+        width: 20%;
+        padding: 20px;
+        border-bottom: 2px solid #F6F8FC;
+    }
+
+    /*.form-inline input.mainSearch { width: 80%!important; } */
+
+    .workSearch .btn-default.d-sm-block {
+        width: 15%;
+        padding: 10px 15px!important;
+    }
+
+    .officePanel .officeContent { padding: 20px; }
+
+    .newsLanding .newsArticle { margin-bottom: 30px!important; }
+
+    .mobileCenter { text-align: center; }
+    
+    
+    /* Sets Video full width */
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    /* - - Footer - - */
+    footer { padding: 0 0 30px 0; }
+
+    .footerBranding {
+        display: block;
+        margin: 0 auto;
+        float: none!important;
+    }
+
+
+
+    /* - - Vacancies Job Listing - - */
+    .ourJobs p {
+        margin-bottom: 0;
+    }
+
+    .jobInfo {
+        border-right: none;
+    }
+
+    .jobInfo .right-border {
+        border: none;
+    }
+
+    .ourJobs .content {
+        border: none;
+    }
+
+    .ourJobs .actions {
+        border-top: 2px solid #f6f8fc;
+        padding: 20px 20px;
+    }
+
+    .ourJobs .col-md-9 {
+        padding-right: 15px!important;
+    }
+
+    .officePanel .moreInfo {
+        margin: 20px;
+
+    }
+    
+    .mainNews .imageContainer{
+        height: auto;
+    }
+    
+    .right-nav {
+        margin: 0;
+    }
+    
+    /* - - - Breadcrumbs - - - */
+    .breadcrumb {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      display: inline-block;
+      width: 100%;
+    }
+    
+    li.breadcrumb-item {
+      display: inline;
+    }
+    
+    .breadcrumb-item.active {
+      display: inline;
+    }
+    
+  
+    /* Mobile Search Bar */
+    
+    .btn-search {
+        background: transparent;
+        border: 0;
+        padding: 0;
+    }
+    
+    .mobile-modal .modal-content {
+        height: auto;
+        background: #3544B1;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+    }
+    
+    .mobile-modal .modal-dialog {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .modal-header .fa-times {
+        color: white;
+        opacity: 1;
+        text-shadow: none;
+    }
+    
+    .modal-header button.close {
+          color: white;
+        opacity: 1;
+        text-shadow: none;
+    }
+    
+    
+    .mainArticle {
+      background-image: url("/media/uw3n3mug/nes_site_header_3.png");
+      background-size: cover;
+      height: 350px;
+      overflow: hidden;
+      position: relative;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+
+    /* Sets Video full width */
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 650px;
+        margin: 1.75rem auto;
+    }
+
+}

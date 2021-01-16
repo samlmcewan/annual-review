@@ -1,0 +1,171 @@
+// Section 
+section {
+    padding: 1rem;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+// Colors 
+.gray-bg {
+    background-color: $light_gray;
+}
+
+// Typography 
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $primary_blue;
+}
+
+p {
+    color: $dark_gray;
+}
+
+.gray-text {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+    color: $dark_gray;
+}
+
+.blue-text {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 42px;
+    color: $primary_blue;
+}
+
+.bold-blue-text {
+    font-size: 36px;
+    font-weight: 600;
+    color: $primary_blue;
+}
+
+// Down arrows 
+.down-arrows-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    margin-top: 35vh;
+}
+
+.down-arrows {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;  
+}
+
+// .arrow-3 {
+//     animation-delay: 0s;
+// }
+// .arrow-2 {
+//     animation-delay: .05s;
+// }
+// .arrow-1 {
+//     animation-delay: .1s;
+// }
+
+.down-arrows-bounce {
+    animation-name: down-arrows-bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes down-arrows-bounce {
+    0%   { transform: translateY(0); }
+    10%  { transform: translateY(10px); }
+    30%  { transform: translateY(15px); }
+    50%  { transform: translateY(0); }
+    57%  { transform: translateY(2px); }
+    64%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+// Education materials section 
+
+// education-materials
+
+#education-materials {
+    // padding-top: 20rem;
+    // padding-bottom: 10rem;
+}
+
+// pie-chart-line 
+
+.reveal-holder {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+  }
+  .reveal-block {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 101%;
+    background: $light_gray;
+  }
+
+  [data-aos="reveal-right"] {
+    transform: scaleX(1);
+    transform-origin: 0% 100%;
+    transition-property: transform;
+    transition-delay: 0.5s;
+  }
+  [data-aos="reveal-right"].aos-animate {
+    transform: scaleX(0);
+  }
+
+  .blue-line-left {
+    margin-bottom: -28px;
+  }
+
+  .reveal-block-teal {
+    position: absolute;
+    top: 0;
+    width: 101%;
+    height: 100%;
+    background: $light_gray;
+  }
+
+
+.teal-line-container {
+    display: flex;
+    flex-direction: column;
+    // margin-top: -100px;
+}
+
+// pie chart
+
+.pie-chart-container {
+    width: 100px;
+    height: 100px;
+    padding-left: 90px;
+    margin-top: -15px;
+}
+
+.pie-chart {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+
+}
+
+.pie-triangle {
+    position: absolute;
+    left: 112px;
+    width: 33px;
+    animation: triangle-move 1s linear;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes triangle-move {
+    0%   { transform: translateY(0) translateX(0) }
+    100%   { transform: translateY(-10px) translateX(-5px) }
+  }

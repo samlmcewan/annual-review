@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NES Annual Report 2020</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+
+    <!-- Font Awesome CDN -->  
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+  
+    <!-- NES Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/nes.styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/Utils.css">
+    <link rel="stylesheet" type="text/css" href="/css/media.css?=v1.5">
+    <link rel="stylesheet" type="text/css" href="/css/typeahead.css">
+
+    <!-- Animate On Scroll CSS  -->
+    <link rel="stylesheet" type="text/css" href="/css/aos.css">
+
+    <!-- Year In Review CSS  -->
+    <link rel="stylesheet" type="text/css" href="/scss/year_in_review.styles.css">
+
+</head>
+<body>
+    <section class="gray-bg full-height">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 mt-5 pt-5">
+            <h1><span class="gray-text">NHS Education for Scotland</span><br>Year in review<br> 2019-2020</h1><br>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="rows d-flex">
+          <div class="col-sm-12 justify-contents-center">
+            <a href="#education-materials" class="down-arrows-container">
+              <img class="down-arrows down-arrows-bounce arrow-1" width="100" height="100" src="/assets/arrow-blue.svg">
+              <img class="down-arrows down-arrows-bounce arrow-2" width="100" height="100" src="/assets/arrow-teal.svg">
+              <img class="down-arrows down-arrows-bounce arrow-3" width="100" height="100" src="/assets/arrow-blue.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education-materials" class="gray-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="reveal-holder">
+              <div class="reveal-block"  data-aos="reveal-right"></div>
+              <img id="blue-line-left" class="blue-line-left" width="100" height="50" src="/assets/blue-line-left.svg">
+              <div class="teal-line-container">
+                <img src="/assets/teal-line.svg" width="60" height="13" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-delay="800"  data-aos-easing="ease-out">
+                <img src="/assets/teal-line.svg" width="60" height="13" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-delay="1000"  data-aos-easing="ease-out">
+                <img src="/assets/teal-line.svg" width="60" height="13" data-aos="fade-in" data-aos-anchor-placement="top-bottom" data-aos-delay="1200"  data-aos-easing="ease-out">
+              </div>
+            </div>
+            <div class="pie-chart-container">
+              <img class="pie-chart" src="/assets/pie-chart.svg">
+              <img class="pie-triangle" src="/assets/pie-triangle.svg" >
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts  -->
+    <!-- Animate On Scroll  -->
+    <script src="/scripts/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Percentage of page scrolled js for css  -->
+    <script>
+      window.addEventListener('scroll', () => {
+        document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        }, false);
+    </script>
+
+
+    <!-- NES Scripts  -->
+    <script>
+        
+        var elements = document.getElementsByClassName('setHeight');
+        
+        var elementHeights = Array.prototype.map.call(elements, function(el)  {
+          return el.clientHeight;
+        });
+        
+        var maxHeight = Math.max.apply(null, elementHeights);
+        
+        Array.prototype.forEach.call(elements, function(el) {
+          el.style.height = maxHeight + "px"
+        });
+    </script>
+        
+   <!-- <script src="https://www.browsealoud.com/plus/scripts/ba.js"></script> -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    
+    <script src="/scripts/bootstrap.min.js"></script>
+
+</body>
+</html>
