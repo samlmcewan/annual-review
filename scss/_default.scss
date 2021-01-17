@@ -328,7 +328,9 @@ p {
   }
 
   // truck 
-  // .truck-container {}
+  .truck-container {
+    overflow: hidden;
+  }
 
   .truck {
     animation: truck-drive 4s infinite; 
