@@ -104,7 +104,7 @@ p {
   transform: scaleX(1);
   transform-origin: 0% 100%;
   transition-property: transform;
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
 }
 
 [data-aos="reveal-right"].aos-animate {
@@ -113,14 +113,6 @@ p {
 
 .blue-line-left {
   margin-bottom: -28px;
-}
-
-.reveal-block-teal {
-  position: absolute;
-  top: 0;
-  width: 101%;
-  height: 100%;
-  background: #e6e6e6;
 }
 
 .teal-line-container {
