@@ -215,11 +215,15 @@ p {
 }
 
 .female-mask {
+  width: 230px;
+  height: 320px;
   position: relative;
   left: 16px;
 }
 
 .mask-female-circle {
+  width: 259px;
+  height: 256px;
   position: relative;
   top: -333px;
   animation: mask-circle-rotate 1s linear infinite;
