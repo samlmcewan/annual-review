@@ -147,6 +147,7 @@ p {
   height: 100px;
   padding-left: 77px;
   margin-top: -30px;
+  margin-bottom: -60px;
 }
 
 .pie-chart {
@@ -198,8 +199,43 @@ p {
   margin-right: 30px;
 }
 
+.circles {
+  position: relative;
+  top: -14px;
+  right: -95px;
+}
+
 .space {
   margin-bottom: 50rem;
+}
+
+.mask-female-container {
+  width: 227.7095px;
+  overflow: visible;
+}
+
+.female-mask {
+  position: relative;
+  left: 16px;
+}
+
+.mask-female-circle {
+  position: relative;
+  top: -333px;
+  animation: mask-circle-rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes mask-circle-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 992px) {
+  .pie-chart-container {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=year_in_review.styles.css.map */

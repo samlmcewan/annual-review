@@ -159,6 +159,7 @@ p {
     height: 100px;
     padding-left: 77px;
     margin-top: -30px;
+    margin-bottom: -60px;
 }
 
 .pie-chart {
@@ -204,13 +205,56 @@ p {
     transform: scaleX(0);
   }
 
- 
+  .line-circle-container {
+    
+  }
   
   .blue-line-right {
     margin-right: 30px;
   }
 
+  .circles {
+      position: relative;
+      top: -14px;
+      right: -95px;
+
+  }
+
+  // SPACE DELETE 
 
   .space {
       margin-bottom: 50rem;
+  }
+
+  // mask female img 
+
+  .mask-female-container {
+    width: 227.7095px;
+    // height: fit-content;
+    overflow: visible;
+    // width: 250px;
+  }
+
+  .female-mask {
+    // width: 227px;
+    // height: 320px;
+    // overflow: visible;
+    position: relative;
+    left: 16px;
+  }
+
+  .mask-female-circle {
+    // width: 254px;
+// width: 100%;
+    position: relative;
+    top: -333px;
+    animation: mask-circle-rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  }
+
+  @keyframes mask-circle-rotate {
+    to {
+      transform: rotate(360deg);
+    }
   }
