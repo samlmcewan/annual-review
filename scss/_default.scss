@@ -1,5 +1,10 @@
 body {
   background-color: $light_gray;
+  overflow: hidden;
+}
+
+.container {
+  padding: 0;
 }
 
 // Section 
@@ -328,9 +333,9 @@ p {
   }
 
   // truck 
-  .truck-container {
-    overflow: hidden;
-  }
+  // .truck-container {
+    
+  // }
 
   .truck {
     animation: truck-drive 4s infinite; 

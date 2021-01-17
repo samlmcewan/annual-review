@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap");
 body {
   background-color: #e6e6e6;
+  overflow: hidden;
+}
+
+.container {
+  padding: 0;
 }
 
 section {
@@ -296,10 +301,6 @@ p {
   display: inline-block;
   width: 45%;
   padding-bottom: calc(50% -1px);
-}
-
-.truck-container {
-  overflow: hidden;
 }
 
 .truck {
