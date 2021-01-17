@@ -107,6 +107,7 @@ p {
     height: 101%;
     background: $light_gray;
   }
+// AOS Reveal 
 
   [data-aos="reveal-right"] {
     transform: scaleX(1);
@@ -116,6 +117,26 @@ p {
   }
   [data-aos="reveal-right"].aos-animate {
     transform: scaleX(0);
+  }
+
+  [data-aos="reveal-bottom"] {
+    transform: scaleY(1);
+    transition-property: transform;
+    transition-delay: 0.5s;
+    &.aos-animate {
+      transform: scaleY(0);
+      transform-origin: 0% 100%;
+    }
+  }
+
+  [data-aos="reveal-top"] {
+    transform: scaleY(1);
+    transition-property: transform;
+    transition-delay: 0.1s;
+    &.aos-animate {
+      transform: scaleY(0);
+      transform-origin: 100% 0%;
+    }
   }
 
   .blue-line-left {
@@ -136,7 +157,7 @@ p {
     width: 100px;
     height: 100px;
     padding-left: 90px;
-    margin-top: -15px;
+    // margin-top: -15px;
 }
 
 .pie-chart {
@@ -153,13 +174,33 @@ p {
     animation: triangle-move 1s linear;
     animation-fill-mode: forwards;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
+    animation-delay: calc(var(--scroll) * -2s);
+    // animation-delay: 2s;
+    // animation-direction: alternate;
 }
+
+@keyframes triangle-opacity {
+    0%   { opacity: 0;  }
+    100%   { opacity: 1;}
+  }
 
 @keyframes triangle-move {
     0%   { transform: translateY(0) translateX(0) }
-    100%   { transform: translateY(-10px) translateX(-5px) }
+    100%   { transform: translateY(-20px) translateX(-10px) }
   }
 
 //   pie chart line right 
 
+[data-aos="reveal-left"] {
+    transform: scaleX(1);
+    transform-origin: 0% 100%;
+    transition-property: transform;
+    transition-delay: 0.3s;
+  }
+  [data-aos="reveal-left"].aos-animate {
+    transform: scaleX(0);
+  }
+
+  .space {
+      margin-bottom: 50rem;
+  }
