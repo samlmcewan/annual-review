@@ -1,3 +1,7 @@
+body {
+  background-color: $light_gray;
+}
+
 // Section 
 section {
     padding: 1rem;
@@ -155,43 +159,42 @@ p {
 // pie chart
 
 .pie-chart-container {
-    width: 100px;
-    height: 100px;
-    padding-left: 77px;
-    margin-top: -30px;
-    margin-bottom: -60px;
+  width: 100px;
+  height: 100px;
+  padding-left: 77px;
+  margin-top: -30px;
 }
 
 .pie-chart {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    margin-left: -5.5px;
-    margin-top: -1px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-left: -5.5px;
+  margin-top: -1px;
 }
 
 .pie-triangle {
-    position: relative;
-    // position: absolute;
-    width: 25px;
-    height: 30px;
-    animation: triangle-move 1s linear;
-    animation-fill-mode: forwards;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-    // animation-delay: 2s;
-    // animation-direction: alternate;
+  position: relative;
+  // position: absolute;
+  width: 25px;
+  height: 30px;
+  animation: triangle-move 1s linear;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  // animation-delay: 2s;
+  // animation-direction: alternate;
 }
 
 @keyframes triangle-opacity {
-    0%   { opacity: 0;  }
-    100%   { opacity: 1;}
-  }
+  0%   { opacity: 0;  }
+  100%   { opacity: 1;}
+}
 
 @keyframes triangle-move {
-    0%   { transform: translateY(0) translateX(0) }
-    100%   { transform: translateY(-10px) translateX(-5px) }
-  }
+  0%   { transform: translateY(0) translateX(0) }
+  100%   { transform: translateY(-12px) translateX(-6px) }
+}
 
 //   pie chart line right 
 
@@ -207,6 +210,12 @@ p {
 
   .line-circle-container {
     // position: relative;
+    // top: -50px;
+    position: relative;
+    top: -50px;
+    /* left: 160px; */
+    padding-left: 220px;
+    // top: 50px;
   }
   
   .blue-line-right {
@@ -214,9 +223,9 @@ p {
   }
 
   .circles {
-      position: relative;
-      top: -14px;
-      right: -95px;
+    position: relative;
+    top: -75px;
+    right: -80px;
 
   }
 
@@ -229,10 +238,8 @@ p {
   // mask female img 
 
   .mask-female-container {
-    width: 227.7095px;
-    // height: fit-content;
-    overflow: visible;
-    // width: 250px;
+    position: absolute;
+    top: 120px;
   }
 
   .female-mask {
@@ -249,7 +256,7 @@ p {
     height: 256px;
 // width: 100%;
     position: relative;
-    top: -333px;
+    top: -334px;
     animation: mask-circle-rotate 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
