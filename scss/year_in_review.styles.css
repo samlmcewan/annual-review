@@ -104,7 +104,7 @@ p {
   transform: scaleX(1);
   transform-origin: 0% 100%;
   transition-property: transform;
-  transition-delay: 0.3s;
+  transition-delay: 0.5s;
 }
 
 [data-aos="reveal-right"].aos-animate {
@@ -133,33 +133,38 @@ p {
 
 .blue-line-left {
   margin-bottom: -28px;
+  margin-left: -1px;
 }
 
 .teal-line-container {
   display: flex;
   flex-direction: column;
+  padding-top: 16px;
 }
 
 .pie-chart-container {
   width: 100px;
   height: 100px;
-  padding-left: 90px;
+  padding-left: 77px;
+  margin-top: -30px;
 }
 
 .pie-chart {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: absolute;
+  margin-left: -5.5px;
+  margin-top: -1px;
 }
 
 .pie-triangle {
-  position: absolute;
-  left: 112px;
-  width: 33px;
+  position: relative;
+  width: 25px;
+  height: 30px;
   animation: triangle-move 1s linear;
   animation-fill-mode: forwards;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -2s);
+  animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes triangle-opacity {
@@ -175,7 +180,7 @@ p {
     transform: translateY(0) translateX(0);
   }
   100% {
-    transform: translateY(-20px) translateX(-10px);
+    transform: translateY(-10px) translateX(-5px);
   }
 }
 [data-aos="reveal-left"] {
@@ -187,6 +192,10 @@ p {
 
 [data-aos="reveal-left"].aos-animate {
   transform: scaleX(0);
+}
+
+.blue-line-right {
+  margin-right: 30px;
 }
 
 .space {
