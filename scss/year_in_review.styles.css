@@ -11,6 +11,10 @@ section {
   min-height: 100vh;
 }
 
+.minus-margin-text {
+  margin-top: -20px;
+}
+
 .gray-bg {
   background-color: #e6e6e6;
 }
@@ -91,6 +95,14 @@ p {
     transform: translateY(0);
   }
 }
+#education-materials-graphics {
+  margin-bottom: 10rem;
+}
+
+#education-materials-text {
+  margin-bottom: 20rem;
+}
+
 .reveal-holder {
   position: relative;
   display: inline-block;
@@ -219,6 +231,12 @@ p {
   right: -80px;
 }
 
+.blue-fill-circle {
+  position: absolute;
+  left: 200px;
+  top: 6px;
+}
+
 .space {
   margin-bottom: 50rem;
 }
@@ -256,6 +274,57 @@ p {
   position: absolute;
   top: 160px;
   left: 180px;
+}
+
+.border-line-1px {
+  border-top: 1px solid white;
+}
+
+#we-delivered {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.we-delivered-text {
+  margin: 0 auto;
+}
+
+.border-line-teal {
+  border-top: 1px solid #36bdb2;
+  display: inline-block;
+  width: 45%;
+  padding-bottom: calc(50% -1px);
+}
+
+.truck {
+  animation: truck-drive 4s infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes truck-drive {
+  0% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(600px);
+  }
+}
+.truck-line {
+  animation: truck-line 4s infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes truck-line {
+  0% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
 }
 
 /*# sourceMappingURL=year_in_review.styles.css.map */
