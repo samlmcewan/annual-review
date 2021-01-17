@@ -232,7 +232,7 @@ p {
   width: 230px;
   height: 320px;
   position: relative;
-  left: 16px;
+  left: 13.5px;
 }
 
 .mask-female-circle {
@@ -243,12 +243,19 @@ p {
   animation: mask-circle-rotate 5s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  z-index: 99999;
 }
 
 @keyframes mask-circle-rotate {
   to {
     transform: rotate(360deg);
   }
+}
+.screen-svg {
+  z-index: -1;
+  position: absolute;
+  top: 160px;
+  left: 180px;
 }
 
 /*# sourceMappingURL=year_in_review.styles.css.map */
