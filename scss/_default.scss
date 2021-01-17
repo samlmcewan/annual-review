@@ -16,6 +16,10 @@ section {
     background-color: $light_gray;
 }
 
+.white-bg {
+  background-color: #ffffff;
+}
+
 // Typography 
 h1 {
     font-size: 2.5rem;
@@ -257,7 +261,7 @@ p {
 // width: 100%;
     position: relative;
     top: -334px;
-    animation: mask-circle-rotate 1s linear infinite;
+    animation: mask-circle-rotate 5s linear infinite; 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
   }
