@@ -334,9 +334,11 @@ p {
   }
 
   // truck 
-  // .truck-container {
-    
-  // }
+  .truck-container {
+    overflow: hidden;
+    padding: 0;
+    // position: absolute;
+  }
 
   .truck {
     animation: truck-drive 4s infinite; 

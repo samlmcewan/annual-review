@@ -298,6 +298,11 @@ p {
   padding-bottom: calc(50% -1px);
 }
 
+.truck-container {
+  overflow: hidden;
+  padding: 0;
+}
+
 .truck {
   animation: truck-drive 4s infinite;
   animation-play-state: paused;
