@@ -296,7 +296,7 @@ p {
     // position: relative;
     display: inline;
     // top: -334px;
-    animation: mask-circle-rotate 5s linear infinite; 
+    animation: mask-circle-rotate 2s linear infinite; 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
     z-index: 99999;
@@ -341,12 +341,14 @@ p {
   }
 
   #delivered-graphic {
-    margin-top: 3rem;
+    margin-top: 10rem;
   }
 
   .delivered-graphic {
     padding-right: 0;
     padding-left: 0;
+    position: absolute;
+    overflow: hidden;
   }
 
   .we-delivered-text {
@@ -365,7 +367,7 @@ p {
 
   // truck 
   .truck-container {
-    overflow: hidden;
+    // overflow: hidden;
     padding: 0;
     // position: absolute;
   }
@@ -378,7 +380,7 @@ p {
 
   @keyframes truck-drive {
     0%   { transform: translateX(-300px) }
-    100%   { transform: translateX(500px) }
+    100%   { transform: translateX(600px) }
   }
 
   .truck-line {
@@ -431,3 +433,6 @@ p {
     0%   { transform: translateX(900px) }
     100%   { transform: translateX(-900px) }
   }
+
+
+ 
