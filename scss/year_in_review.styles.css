@@ -322,6 +322,7 @@ p {
   padding-right: 0;
   padding-left: 0;
   position: absolute;
+  overflow: hidden;
 }
 
 .we-delivered-text {
@@ -448,6 +449,9 @@ p {
     100% {
       transform: translateX(-1500px);
     }
+  }
+  .delivered-graphic {
+    overflow: visible;
   }
 }
 @media only screen and (min-width: 1200px) {
