@@ -1,4 +1,12 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    
+    @keyframes truck-drive {
+        0%   { transform: translateX(-900px) }
+        100%   { transform: translateX(1100px) }
+      }
+
+      @keyframes truck-line {
+        0%   { transform: translateX(1500px) }
+        100%   { transform: translateX(-1500px) }
+      }
 }

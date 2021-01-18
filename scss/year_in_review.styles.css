@@ -407,6 +407,41 @@ p {
     display: flex;
     flex-direction: column;
   }
+
+  @keyframes truck-drive {
+    0% {
+      transform: translateX(-600px);
+    }
+    100% {
+      transform: translateX(800px);
+    }
+  }
+  @keyframes truck-line {
+    0% {
+      transform: translateX(1200px);
+    }
+    100% {
+      transform: translateX(-1200px);
+    }
+  }
+}
+@media (min-width: 992px) {
+  @keyframes truck-drive {
+    0% {
+      transform: translateX(-900px);
+    }
+    100% {
+      transform: translateX(1100px);
+    }
+  }
+  @keyframes truck-line {
+    0% {
+      transform: translateX(1500px);
+    }
+    100% {
+      transform: translateX(-1500px);
+    }
+  }
 }
 
 /*# sourceMappingURL=year_in_review.styles.css.map */
