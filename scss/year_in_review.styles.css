@@ -290,6 +290,10 @@ p {
   left: 180px;
 }
 
+.delivered-text-container {
+  overflow: hidden;
+}
+
 .border-line-1px {
   border-top: 1px solid white;
 }
