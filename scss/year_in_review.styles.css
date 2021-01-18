@@ -7,6 +7,11 @@ section {
   padding: 1rem;
 }
 
+.section {
+  height: 100vh;
+  margin-bottom: 15rem;
+}
+
 .full-height {
   min-height: 100vh;
 }
@@ -96,7 +101,7 @@ p {
   }
 }
 #education-materials-graphics {
-  margin-bottom: 10rem;
+  margin-bottom: 13rem;
 }
 
 #education-materials-text {
@@ -241,6 +246,13 @@ p {
   margin-bottom: 50rem;
 }
 
+.mask-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .mask-female-container {
   position: absolute;
   top: 120px;
@@ -256,8 +268,10 @@ p {
 .mask-female-circle {
   width: 259px;
   height: 256px;
-  position: relative;
-  top: -334px;
+  position: absolute;
+  top: -17px;
+  left: -2px;
+  display: inline;
   animation: mask-circle-rotate 5s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
@@ -280,11 +294,26 @@ p {
   border-top: 1px solid white;
 }
 
+#delivered {
+  padding: 0;
+}
+
 #we-delivered {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#delivered-graphic {
+  margin-top: 3rem;
+}
+
+.delivered-graphic {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .we-delivered-text {
@@ -311,24 +340,72 @@ p {
 
 @keyframes truck-drive {
   0% {
-    transform: translateX(-600px);
+    transform: translateX(-300px);
   }
   100% {
-    transform: translateX(600px);
+    transform: translateX(500px);
   }
 }
 .truck-line {
+  display: block;
+  margin-bottom: 15px;
   animation: truck-line 4s infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
 }
 
+#truck-line-1 {
+  animation: truck-line 8s infinite;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+#truck-line-2 {
+  padding-left: 40px;
+  animation: truck-line 5.5s infinite;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+#truck-line-3 {
+  margin-top: 15px;
+  padding-left: 40px;
+  animation: truck-line 5s infinite;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+#truck-line-4 {
+  margin-left: 40px;
+  padding-left: 40px;
+  animation: truck-line 7s infinite;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+#truck-line-5 {
+  margin-left: 10px;
+  padding-left: 40px;
+  animation: truck-line 9s infinite;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
 @keyframes truck-line {
   0% {
-    transform: translateX(600px);
+    transform: translateX(900px);
   }
   100% {
-    transform: translateX(-600px);
+    transform: translateX(-900px);
+  }
+}
+@media (min-width: 768px) {
+  .truck-line {
+    margin-bottom: 15px;
+    animation: truck-line 4s infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  }
+
+  .truck-container {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
   }
 }
 
