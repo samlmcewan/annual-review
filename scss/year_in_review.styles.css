@@ -304,7 +304,6 @@ p {
   justify-content: space-between;
   align-items: center;
   padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 #delivered-graphic {
@@ -440,6 +439,24 @@ p {
     }
     100% {
       transform: translateX(-1500px);
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  @keyframes truck-drive {
+    0% {
+      transform: translateX(-1200px);
+    }
+    100% {
+      transform: translateX(1400px);
+    }
+  }
+  @keyframes truck-line {
+    0% {
+      transform: translateX(1800px);
+    }
+    100% {
+      transform: translateX(-1800px);
     }
   }
 }
