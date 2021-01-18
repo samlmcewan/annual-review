@@ -108,6 +108,10 @@ p {
   margin-bottom: 20rem;
 }
 
+.ed-materials-text {
+  overflow: hidden;
+}
+
 .reveal-holder {
   position: relative;
   display: inline-block;
