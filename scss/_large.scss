@@ -9,8 +9,8 @@
         0%   { transform: translateX(1500px) }
         100%   { transform: translateX(-1500px) }
       }
-      .delivered-graphic {
-        // overflow: visible;
-      }
       
+      .delivered-margin {
+        margin-top: 10vh;
+      }
 }

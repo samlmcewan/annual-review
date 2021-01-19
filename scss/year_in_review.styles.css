@@ -462,6 +462,9 @@ p {
       transform: translateX(-1200px);
     }
   }
+  .delivered-margin {
+    margin-top: 10vh;
+  }
 }
 @media (min-width: 992px) {
   @keyframes truck-drive {
@@ -480,6 +483,9 @@ p {
       transform: translateX(-1500px);
     }
   }
+  .delivered-margin {
+    margin-top: 10vh;
+  }
 }
 @media only screen and (min-width: 1200px) {
   @keyframes truck-drive {
@@ -497,6 +503,9 @@ p {
     100% {
       transform: translateX(-1800px);
     }
+  }
+  .delivered-margin {
+    margin-top: 10vh;
   }
 }
 

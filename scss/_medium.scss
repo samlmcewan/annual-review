@@ -23,4 +23,7 @@
         0%   { transform: translateX(1200px) }
         100%   { transform: translateX(-1200px) }
       }
+      .delivered-margin {
+        margin-top: 10vh;
+      }
 }
