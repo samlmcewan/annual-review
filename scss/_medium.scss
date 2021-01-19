@@ -8,7 +8,7 @@
         animation-delay: calc(var(--scroll) * -1s);
       }
       .truck-container {
-        overflow: visible;
+        // overflow: visible;
         display: flex;
         flex-direction: column;
         
