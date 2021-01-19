@@ -2,6 +2,7 @@
 body {
   background-color: #ffffff;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .animation-section {

@@ -1,6 +1,7 @@
 body {
   background-color: #ffffff;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .container {
@@ -544,5 +545,3 @@ p {
     // animation: mask-circle-rotate 2s linear infinite; 
     // animation-play-state: paused;
     // animation-delay: calc(var(--scroll) * -1s);
-
-  
