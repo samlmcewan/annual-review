@@ -440,8 +440,10 @@ p {
 }
 
 .care-graphics-container {
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
   margin-top: 13rem;
+  padding-left: 0;
+  margin-left: -3px;
 }
 
 .care-container {
@@ -466,7 +468,7 @@ p {
 .care-outer {
   position: absolute;
   top: 3px;
-  transform: rotate(-1deg);
+  transform: rotate(-2deg);
   animation: care-rotate-2 1s  infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
@@ -486,13 +488,26 @@ p {
 }
 @keyframes care-rotate-2 {
   to {
-    transform: rotate(-361deg);
+    transform: rotate(-362deg);
   }
 }
 .care-text-container {
   padding-bottom: 3rem;
 }
 
+@media (max-width: 767px) {
+  .care {
+    width: calc(304px * 0.85);
+  }
+
+  .care-inner {
+    width: calc(340px * 0.85);
+  }
+
+  .care-outer {
+    width: calc(384.48px * 0.85);
+  }
+}
 @media (min-width: 768px) {
   .truck-line {
     margin-bottom: 15px;
