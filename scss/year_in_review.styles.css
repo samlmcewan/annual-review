@@ -437,6 +437,7 @@ p {
 #care-measures {
   background-color: white;
   padding-left: 1rem;
+  margin-bottom: 300px;
 }
 
 .care-graphics-container {
@@ -531,6 +532,90 @@ p {
     width: calc(82.6px * 0.8);
   }
 }
+.check-graphics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 250px;
+}
+
+.check-graphics {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.checks-circle {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+
+.checks-circle-bg {
+  position: absolute;
+  top: 11.2px;
+  left: 27.2px;
+  z-index: -9;
+}
+
+.checks-hands {
+  position: absolute;
+  z-index: 1;
+  top: 69px;
+  left: 23.4px;
+  width: 206px;
+  height: 88px;
+}
+
+.checks-join {
+  position: absolute;
+  top: -19px;
+  left: 0px;
+  z-index: 9;
+}
+
+.checks-handle {
+  position: absolute;
+}
+
+.checks-handle-shadow {
+  position: absolute;
+  z-index: -99;
+  top: 7px;
+  left: -7px;
+}
+
+.circle-handle-container {
+  position: absolute;
+  left: -11px;
+  top: 33px;
+  animation: check-rotate 2s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes check-rotate {
+  from {
+    transform: rotate(-500deg);
+    transform-origin: top left;
+  }
+  to {
+    transform: rotate(-245deg);
+    transform-origin: top left;
+  }
+}
+.checks-handle-container {
+  position: absolute;
+  top: 215px;
+  left: 200px;
+  transform: rotate(-45deg);
+}
+
+.check-text {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
 @media (min-width: 768px) {
   .truck-line {
     margin-bottom: 15px;
@@ -608,7 +693,7 @@ p {
       transform: translateX(-1200px);
     }
     100% {
-      transform: translateX(1400px);
+      transform: translateX(4400px);
     }
   }
   @keyframes truck-line {
