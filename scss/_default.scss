@@ -43,6 +43,10 @@ section {
 .overflow-h {
   overflow: hidden;
 }
+
+.overflow-x-h {
+  overflow-x: hidden;
+}
 // Colors 
 .gray-bg {
     background-color: $light_gray;
@@ -490,7 +494,7 @@ p {
   }
 
   .care-graphics-container {
-    margin-bottom: 13rem;
+    margin-bottom: 10rem;
     margin-top: 13rem;
   }
 
@@ -542,6 +546,6 @@ p {
     }
   }
 
-    // animation: mask-circle-rotate 2s linear infinite; 
-    // animation-play-state: paused;
-    // animation-delay: calc(var(--scroll) * -1s);
+  .care-text-container {
+    padding-bottom: 3rem;
+  }

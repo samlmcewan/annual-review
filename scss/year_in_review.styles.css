@@ -33,6 +33,10 @@ body {
   overflow: hidden;
 }
 
+.overflow-x-h {
+  overflow-x: hidden;
+}
+
 .gray-bg {
   background-color: #e6e6e6;
 }
@@ -436,7 +440,7 @@ p {
 }
 
 .care-graphics-container {
-  margin-bottom: 13rem;
+  margin-bottom: 10rem;
   margin-top: 13rem;
 }
 
@@ -485,6 +489,10 @@ p {
     transform: rotate(-361deg);
   }
 }
+.care-text-container {
+  padding-bottom: 3rem;
+}
+
 @media (min-width: 768px) {
   .truck-line {
     margin-bottom: 15px;
