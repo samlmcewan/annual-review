@@ -4,12 +4,20 @@ body {
   overflow-x: hidden;
 }
 
-section {
-  padding: 1rem;
+.animation-section {
+  padding: 50px 0;
+}
+
+.delivered-margin {
+  margin-top: 50vh;
 }
 
 .section {
   height: 100vh;
+}
+
+.intro {
+  margin: 50px 0;
 }
 
 .full-height {
@@ -20,6 +28,10 @@ section {
   margin-top: -20px;
 }
 
+.overflow-h {
+  overflow: hidden;
+}
+
 .gray-bg {
   background-color: #e6e6e6;
 }
@@ -28,7 +40,7 @@ section {
   background-color: #ffffff;
 }
 
-h1 {
+.infographic-header {
   font-size: 2.5rem;
   font-weight: 600;
   color: #004785;
@@ -70,6 +82,10 @@ p {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
+}
+
+#build-links {
+  font-weight: 600;
 }
 
 .down-arrows-bounce {

@@ -8,14 +8,30 @@ body {
   // overflow: hidden;
 }
 
+
 // Section 
 section {
-    padding: 1rem;
+    // padding: 1rem;
+}
+
+.animation-section {
+  padding: 50px 0;
+}
+
+
+
+.delivered-margin {
+  margin-top: 50vh;
+
 }
 
 .section {
   height: 100vh;
   // margin-bottom: 15rem;
+}
+
+.intro {
+  margin: 50px 0;
 }
 
 .full-height {
@@ -26,6 +42,9 @@ section {
   margin-top: -20px;
 }
 
+.overflow-h {
+  overflow: hidden;
+}
 // Colors 
 .gray-bg {
     background-color: $light_gray;
@@ -36,8 +55,11 @@ section {
 }
 
 // Typography 
-h1 {
-    font-size: 2.5rem;
+
+
+
+.infographic-header {
+  font-size: 2.5rem;
     font-weight: 600;
     color: $primary_blue;
 }
@@ -79,6 +101,10 @@ p {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: bottom;  
+}
+
+#build-links {
+  font-weight: 600;
 }
 
 // .arrow-3 {
