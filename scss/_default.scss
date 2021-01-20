@@ -507,7 +507,7 @@ p {
     justify-content: center;
     // text-align: center;
     // align-items: center;
-    margin-bottom: 250px;
+    // margin-bottom: 250px;
   }
 
   .care {
@@ -520,12 +520,12 @@ p {
     position: absolute;
     top: 22px;
 
-    animation: care-rotate 800ms linear infinite;
+    animation: care-rotate 300ms linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
   }
   .care-outer {
-    position: absolute;
+    position: relative;
     top: 3px;
   
     // left: 122px;

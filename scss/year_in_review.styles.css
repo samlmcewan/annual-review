@@ -449,7 +449,6 @@ p {
 .care-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 250px;
 }
 
 .care {
@@ -461,13 +460,13 @@ p {
 .care-inner {
   position: absolute;
   top: 22px;
-  animation: care-rotate 800ms linear infinite;
+  animation: care-rotate 300ms linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
 }
 
 .care-outer {
-  position: absolute;
+  position: relative;
   top: 3px;
   transform: rotate(-2deg);
   animation: care-rotate-2 1s  infinite;
@@ -770,13 +769,13 @@ p {
     margin-bottom: 250px;
   }
 
-  .care-line {
-    display: flex;
-  }
-
   .gray-circles {
     top: 0px;
     left: 40px;
+  }
+
+  .care-outer {
+    left: 10px;
   }
 
   @keyframes check-rotate {
@@ -862,6 +861,10 @@ p {
   }
   .delivered-margin {
     margin-top: 10vh;
+  }
+
+  .gray-circles {
+    left: 0px;
   }
 }
 

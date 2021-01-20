@@ -34,12 +34,16 @@
       .care-container {
         margin-bottom: 250px;
       }
-      .care-line {
-        display: flex;
-      }
+      // .care-line {
+      //   display: flex;
+      // }
       .gray-circles {
         top: 0px;
         left: 40px;
+      }
+
+      .care-outer {
+        left: 10px;
       }
 
       @keyframes check-rotate {
