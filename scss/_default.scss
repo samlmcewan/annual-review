@@ -1,7 +1,8 @@
 body {
   background-color: #ffffff;
   overflow-x: hidden;
-  overflow-y: auto;
+  // MAYBE NEED OVERLFOW Y???????????????? 
+  // overflow-y: auto;
 }
 
 .container {
@@ -589,6 +590,7 @@ p {
       .gray-circles {
         width: calc(82.6px * 0.8);
       }
+      
   }
 
 //  checks section 
@@ -671,7 +673,7 @@ p {
     transform-origin: top left;
   }
   to {
-    transform: rotate(-245deg);
+    transform: rotate(-210deg);
     transform-origin: top left;
   }
 }
@@ -691,3 +693,127 @@ p {
   margin-bottom: 15px;
 }
 
+
+// mental health section 
+
+.mh-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+.mh-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mh-border-top {
+  padding: 8px 0;
+  width: 100%;
+  border-top: 1px solid $light_teal;
+}
+.mh-border-right {
+  display: none;
+}
+.mh-border-bottom {
+  padding: 8px 0;
+  width: 100%;
+  border-bottom: 1px solid $light_gray;
+}
+
+.mh-item {
+  padding: 17px;
+}
+
+
+.mh-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh-content {
+  position: absolute;
+}
+
+.mh-responsive-text {
+  display: none;
+}
+
+#mh-med {
+  animation: mh-scale 1.5s  infinite;
+  animation-direction: alternate-reverse;
+  // animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  // animation-timing-function: ease-out;
+
+}
+#mh-sq {
+  animation: mh-rotate-sq 100ms linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+}
+#mh-sm-c {
+  opacity: 0;
+  animation: mh-opacity 2s linear infinite;
+  animation-direction: alternate-reverse;
+  // animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+}
+#mh-cog {
+  animation: mh-rotate-cog 250ms linear infinite;
+  // animation-play-state:paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  
+}
+
+@keyframes mh-opacity {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mh-rotate-sq {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mh-scale {
+  to {
+    transform: scale(1.3);
+    transform-origin: center;
+  }
+}
+
+@keyframes mh-rotate-cog {
+  to {
+    transform: rotate(360deg);
+  }
+}

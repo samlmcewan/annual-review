@@ -41,4 +41,44 @@
         top: 0px;
         left: 40px;
       }
+
+      @keyframes check-rotate {
+        from {
+          transform: rotate(-500deg);
+          transform-origin: top left;
+        }
+        to {
+          transform: rotate(-190deg);
+          transform-origin: top left;
+        }
+      }
+
+      .mh-container {
+        flex-direction: row;
+        
+      }
+      .mh-border-right {
+        display: flex;
+        position: absolute;
+        width: 1px;
+        height: 80px;
+        border-right: 1px solid $light_gray;
+      }
+      .mh-responsive-text {
+        display: block;
+      }
+      .mh-row {
+        padding: 26px 0;
+      }
+      .mh-t-1 {
+        padding-top: 17px;
+        padding-left: 17px
+      }
+      .mh-t-2 {
+        padding-left: 17px;
+      }
+      .mh-mob-text {
+        display: none;
+      }
+      
 }

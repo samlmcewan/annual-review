@@ -2,7 +2,6 @@
 body {
   background-color: #ffffff;
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .animation-section {
@@ -599,7 +598,7 @@ p {
     transform-origin: top left;
   }
   to {
-    transform: rotate(-245deg);
+    transform: rotate(-210deg);
     transform-origin: top left;
   }
 }
@@ -616,6 +615,120 @@ p {
   margin-bottom: 15px;
 }
 
+.mh-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mh-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh-border-top {
+  padding: 8px 0;
+  width: 100%;
+  border-top: 1px solid #36bdb2;
+}
+
+.mh-border-right {
+  display: none;
+}
+
+.mh-border-bottom {
+  padding: 8px 0;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.mh-item {
+  padding: 17px;
+}
+
+.mh-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mh-content {
+  position: absolute;
+}
+
+.mh-responsive-text {
+  display: none;
+}
+
+#mh-med {
+  animation: mh-scale 1.5s  infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+#mh-sq {
+  animation: mh-rotate-sq 100ms linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+#mh-sm-c {
+  opacity: 0;
+  animation: mh-opacity 2s linear infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+#mh-cog {
+  animation: mh-rotate-cog 250ms linear infinite;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes mh-opacity {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mh-rotate-sq {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mh-scale {
+  to {
+    transform: scale(1.3);
+    transform-origin: center;
+  }
+}
+@keyframes mh-rotate-cog {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 768px) {
   .truck-line {
     margin-bottom: 15px;
@@ -664,6 +777,49 @@ p {
   .gray-circles {
     top: 0px;
     left: 40px;
+  }
+
+  @keyframes check-rotate {
+    from {
+      transform: rotate(-500deg);
+      transform-origin: top left;
+    }
+    to {
+      transform: rotate(-190deg);
+      transform-origin: top left;
+    }
+  }
+  .mh-container {
+    flex-direction: row;
+  }
+
+  .mh-border-right {
+    display: flex;
+    position: absolute;
+    width: 1px;
+    height: 80px;
+    border-right: 1px solid #e6e6e6;
+  }
+
+  .mh-responsive-text {
+    display: block;
+  }
+
+  .mh-row {
+    padding: 26px 0;
+  }
+
+  .mh-t-1 {
+    padding-top: 17px;
+    padding-left: 17px;
+  }
+
+  .mh-t-2 {
+    padding-left: 17px;
+  }
+
+  .mh-mob-text {
+    display: none;
   }
 }
 @media (min-width: 992px) {
