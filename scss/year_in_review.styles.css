@@ -1106,14 +1106,6 @@ p {
   }
 }
 @media (min-width: 992px) {
-  @keyframes truck-drive {
-    0% {
-      transform: translateX(-300px);
-    }
-    100% {
-      transform: translateX(1000px);
-    }
-  }
   @keyframes truck-line {
     0% {
       transform: translateX(1500px);
@@ -1135,14 +1127,6 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  @keyframes truck-drive {
-    0% {
-      transform: translateX(-100px);
-    }
-    100% {
-      transform: translateX(4400px);
-    }
-  }
   @keyframes truck-line {
     0% {
       transform: translateX(1800px);
@@ -1153,6 +1137,11 @@ p {
   }
   .delivered-margin {
     margin-top: 10vh;
+  }
+
+  #delivered-text-section {
+    margin-top: 0;
+    margin-bottom: 8rem;
   }
 
   .gray-circles {
@@ -1173,6 +1162,19 @@ p {
 
   .care-row {
     overflow: visible;
+  }
+
+  .check-graphics-container {
+    margin-top: -300px;
+  }
+
+  #checks {
+    margin-top: 9rem;
+    margin-bottom: 8rem;
+  }
+
+  #mhealth {
+    margin-bottom: 5rem;
   }
 }
 
