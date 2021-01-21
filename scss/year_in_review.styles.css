@@ -1177,6 +1177,10 @@ p {
     margin-bottom: 5rem;
   }
 
+  #webinar {
+    margin-top: 0;
+  }
+
   @keyframes check-rotate {
     from {
       transform: rotate(-55deg);
