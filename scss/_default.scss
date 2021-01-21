@@ -509,6 +509,9 @@ p {
     // align-items: center;
     // margin-bottom: 250px;
   }
+  .care-row {
+    overflow:hidden;
+  }
 
   .care {
     position: absolute;
@@ -527,6 +530,7 @@ p {
   .care-outer {
     position: relative;
     top: 3px;
+    left: -1px;
   
     // left: 122px;
     // padding-left: 5px;
@@ -603,6 +607,10 @@ p {
   justify-content: center;
   margin-bottom: 250px;
   // margin-top: 300px;
+}
+
+.checks-row {
+  overflow: hidden;
 }
 
 .check-graphics {
@@ -708,6 +716,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .mh-border-top {
   padding: 8px 0;
@@ -817,3 +826,137 @@ p {
     transform: rotate(360deg);
   }
 }
+
+// Webinar section 
+
+.webinar-graphics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 336px;
+
+  .webinar-row {
+    overflow: hidden;
+  }
+  
+  .webinar-c-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    .webinar-c {
+      z-index: 9;
+      position: relative;
+      width: 18px;
+      top: 25px;
+    }
+    #webinar-c-1 {
+      left: 33px;
+    }
+    #webinar-c-2 {
+      left: 44px;
+    }
+    #webinar-c-3 {
+      left: 55px;
+    }
+  }
+
+  #webinar-speech {
+    z-index: 3;
+    position: relative;
+    top: -30px;
+    left: 34px;
+  }
+  #webinar-person {
+    z-index: 2;
+    position: relative;
+    top: -37px;
+    left: -45px;
+  }
+  #webinar-chart {
+    z-index: 1;
+    width: 271px;
+    position: relative;
+    top: -174px;
+  }
+  #webinar-screen {
+    z-index: 0;
+    position: relative;
+    top: -340px;
+  }
+
+}
+
+
+// trainee section 
+
+.trainees-row {
+  overflow: hidden;
+}
+
+.trainees-graphics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: -120px;
+  padding-bottom: 20px;
+}
+
+#trainee-ste {
+  position: relative;
+  z-index: 1;
+  left: 75px;
+  top: 30px;
+}
+
+#trainee-cir {
+  position: relative;
+  top: -200px;
+  left: -10px;
+  z-index: -1;
+}
+
+.trainee-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 131px;
+  margin-left: 50px;
+}
+
+.trainee-text {
+  justify-content: flex-end;
+  padding-left: 200px;
+}
+
+.trainee-desktop {
+  display: none;
+}
+
+// #ta-1 {
+// opacity: 0;
+// animation: arrow-down 2s linear infinite;
+// animation-direction: alternate-reverse;
+// animation-play-state: paused;
+// animation-delay: calc(var(--scroll) * -1s);
+// }
+// #ta-2 {
+//   animation: arrow-down 2s linear;
+//   animation-delay: 100ms;
+// }
+// #ta-3 {
+//   animation: arrow-down 2s linear;
+//   animation-delay: 200ms;
+// }
+// #ta-4 {
+//   animation: arrow-down 2s linear;
+//   animation-delay: 300ms;
+// }
+
+// @keyframes arrow-down {
+//   from {transform: translateY(-500px); opacity: 0;}
+//   to {transform: translateY(0px); opacity: 1;}
+// }

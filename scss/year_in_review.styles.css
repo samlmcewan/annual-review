@@ -451,6 +451,10 @@ p {
   justify-content: center;
 }
 
+.care-row {
+  overflow: hidden;
+}
+
 .care {
   position: absolute;
   top: 40px;
@@ -468,6 +472,7 @@ p {
 .care-outer {
   position: relative;
   top: 3px;
+  left: -1px;
   transform: rotate(-2deg);
   animation: care-rotate-2 1s  infinite;
   animation-play-state: paused;
@@ -535,6 +540,10 @@ p {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 250px;
+}
+
+.checks-row {
+  overflow: hidden;
 }
 
 .check-graphics {
@@ -625,6 +634,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .mh-border-top {
@@ -728,6 +738,104 @@ p {
     transform: rotate(360deg);
   }
 }
+.webinar-graphics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.webinar-graphics-container .webinar-row {
+  overflow: hidden;
+}
+.webinar-graphics-container .webinar-c-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.webinar-graphics-container .webinar-c-container .webinar-c {
+  z-index: 9;
+  position: relative;
+  width: 18px;
+  top: 25px;
+}
+.webinar-graphics-container .webinar-c-container #webinar-c-1 {
+  left: 33px;
+}
+.webinar-graphics-container .webinar-c-container #webinar-c-2 {
+  left: 44px;
+}
+.webinar-graphics-container .webinar-c-container #webinar-c-3 {
+  left: 55px;
+}
+.webinar-graphics-container #webinar-speech {
+  z-index: 3;
+  position: relative;
+  top: -30px;
+  left: 34px;
+}
+.webinar-graphics-container #webinar-person {
+  z-index: 2;
+  position: relative;
+  top: -37px;
+  left: -45px;
+}
+.webinar-graphics-container #webinar-chart {
+  z-index: 1;
+  width: 271px;
+  position: relative;
+  top: -174px;
+}
+.webinar-graphics-container #webinar-screen {
+  z-index: 0;
+  position: relative;
+  top: -340px;
+}
+
+.trainees-row {
+  overflow: hidden;
+}
+
+.trainees-graphics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: -120px;
+  padding-bottom: 20px;
+}
+
+#trainee-ste {
+  position: relative;
+  z-index: 1;
+  left: 75px;
+  top: 30px;
+}
+
+#trainee-cir {
+  position: relative;
+  top: -200px;
+  left: -10px;
+  z-index: -1;
+}
+
+.trainee-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 131px;
+  margin-left: 50px;
+}
+
+.trainee-text {
+  justify-content: flex-end;
+  padding-left: 200px;
+}
+
+.trainee-desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .truck-line {
     margin-bottom: 15px;
@@ -768,10 +876,6 @@ p {
   .gray-circles {
     top: 0px;
     left: 40px;
-  }
-
-  .care-outer {
-    left: 10px;
   }
 
   @keyframes check-rotate {
@@ -837,6 +941,14 @@ p {
   .delivered-margin {
     margin-top: 10vh;
   }
+
+  .trainee-desktop {
+    display: block;
+  }
+
+  .trainee-mobile {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1200px) {
   @keyframes truck-drive {
@@ -861,6 +973,22 @@ p {
 
   .gray-circles {
     left: 0px;
+  }
+
+  .webinar-row {
+    overflow: visible;
+  }
+
+  .mh-row {
+    overflow: visible;
+  }
+
+  .checks-row {
+    overflow: visible;
+  }
+
+  .care-row {
+    overflow: visible;
   }
 }
 
