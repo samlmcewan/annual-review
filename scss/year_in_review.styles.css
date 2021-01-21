@@ -1178,7 +1178,7 @@ p {
   }
 
   #webinar {
-    margin-top: 0;
+    margin-top: 100px;
   }
 
   @keyframes check-rotate {
