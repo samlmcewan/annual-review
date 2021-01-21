@@ -46,4 +46,14 @@
       #mhealth {
         margin-bottom: 5rem;
       }
+      @keyframes check-rotate {
+        from {
+          transform: rotate(-55deg);
+          transform-origin: top left;
+        }
+        to {
+          transform: rotate(30deg);
+          transform-origin: top left;
+        }
+      }
 }
