@@ -969,3 +969,94 @@ p {
   float: left;
   // margin-bottom: -1px;
 }
+
+.turas-click {
+  float: right;
+}
+// data team section 
+.data-team-graphic {
+  float: right;
+}
+
+// careers section 
+
+.careers-graphic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.careers-graphic {
+  max-width: 100vw;
+}
+
+.careers-text {
+  max-width: 50%;
+  // font-size: .8rem;
+}
+
+// pharmacy section 
+
+
+.pharm-graphic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pharm-graphic {
+  max-width: 100vw;
+}
+
+.pharm-bars-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 131px;
+  margin-left: 20px;
+  float: left;
+}
+
+// balance section 
+
+.balance-graphic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.balance-graphic {
+  max-width: 100vw;
+}
+#balance {
+  padding-top: 0;
+  margin-top: 0;
+}
+// .balance-text {
+//   overflow-x: hidden;
+// }
+// dental section 
+.dental-graphic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dental-graphic {
+  max-width: 100vw;
+}
+
+
+
+
+
+// postgrad section 
+
+.postgrad-graphic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.postgrad-graphic {
+  max-width: 100vw;
+}
+
+.postgrad-stat {}
