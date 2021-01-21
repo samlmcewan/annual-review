@@ -314,6 +314,12 @@ p {
   left: 180px;
 }
 
+.delivered-space-mob {
+  height: 10vw;
+  background-color: #e6e6e6;
+  margin-top: -2px;
+}
+
 .delivered-text-container {
   overflow: hidden;
 }
@@ -324,6 +330,12 @@ p {
 
 #delivered {
   padding: 0;
+  height: 60vh;
+  margin-top: -280px;
+}
+
+#delivered-text-section {
+  margin-bottom: -200px;
 }
 
 #we-delivered {
@@ -348,6 +360,7 @@ p {
 
 .we-delivered-text {
   margin: 0 auto;
+  margin-right: 15px;
 }
 
 .border-line-teal {
@@ -363,17 +376,17 @@ p {
 }
 
 .truck {
-  animation: truck-drive 4s infinite;
+  animation: truck-drive 1s infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes truck-drive {
   0% {
-    transform: translateX(-300px);
+    transform: translateX(-100vw);
   }
   100% {
-    transform: translateX(600px);
+    transform: translateX(100vw);
   }
 }
 .truck-line {
@@ -436,11 +449,11 @@ p {
 #care-measures {
   background-color: white;
   padding-left: 1rem;
-  margin-bottom: 300px;
+  margin-bottom: -100px;
 }
 
 .care-graphics-container {
-  margin-bottom: 7rem;
+  margin-bottom: 45px;
   margin-top: 13rem;
   padding-left: 0;
   margin-left: -3px;
@@ -471,8 +484,8 @@ p {
 
 .care-outer {
   position: relative;
-  top: 3px;
-  left: -1px;
+  top: 30px;
+  left: 10px;
   transform: rotate(-2deg);
   animation: care-rotate-2 1s  infinite;
   animation-play-state: paused;
@@ -535,15 +548,25 @@ p {
     width: calc(82.6px * 0.8);
   }
 }
+#checks {
+  overflow-x: hidden;
+}
+
+.desktop-check-text {
+  display: none;
+}
+
+#check-text-section {
+  margin-top: -200px;
+  padding-bottom: 0;
+}
+
 .check-graphics-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 250px;
-}
-
-.checks-row {
-  overflow: hidden;
+  margin-bottom: 650px;
+  margin-top: -210px;
 }
 
 .check-graphics {
@@ -559,7 +582,7 @@ p {
 
 .checks-circle-bg {
   position: absolute;
-  top: 11.2px;
+  top: 311.2px;
   left: 27.2px;
   z-index: -9;
 }
@@ -567,7 +590,7 @@ p {
 .checks-hands {
   position: absolute;
   z-index: 1;
-  top: 69px;
+  top: 369px;
   left: 23.4px;
   width: 206px;
   height: 88px;
@@ -594,8 +617,8 @@ p {
 .circle-handle-container {
   position: absolute;
   left: -11px;
-  top: 33px;
-  animation: check-rotate 2s linear infinite;
+  top: 333px;
+  animation: check-rotate 1s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
 }
@@ -738,6 +761,14 @@ p {
     transform: rotate(360deg);
   }
 }
+#webinar {
+  margin-top: -50px;
+}
+
+.webinar-text-2 {
+  padding-bottom: 50px;
+}
+
 .webinar-graphics-container {
   display: flex;
   flex-direction: column;
@@ -795,6 +826,7 @@ p {
 #trainees {
   padding-bottom: 0px;
   margin-bottom: 0px;
+  margin-top: -370px;
 }
 
 .trainees-row {
@@ -850,7 +882,6 @@ p {
   margin-right: 20px;
   float: right;
   margin-bottom: -1px;
-  margin-top: 60vh;
 }
 
 #turas {
@@ -958,12 +989,22 @@ p {
     flex-direction: column;
   }
 
+  .delivered-space-mob {
+    display: none;
+  }
+
+  #delivered {
+    padding: 0;
+    height: 50vh;
+    margin-top: -230px;
+  }
+
   @keyframes truck-drive {
     0% {
-      transform: translateX(-600px);
+      transform: translateX(-100px);
     }
     100% {
-      transform: translateX(800px);
+      transform: translateX(1400px);
     }
   }
   @keyframes truck-line {
@@ -997,6 +1038,10 @@ p {
       transform-origin: top left;
     }
   }
+  .desktop-check-text {
+    display: block;
+  }
+
   .mh-container {
     flex-direction: row;
   }
@@ -1041,10 +1086,10 @@ p {
 @media (min-width: 992px) {
   @keyframes truck-drive {
     0% {
-      transform: translateX(-900px);
+      transform: translateX(-300px);
     }
     100% {
-      transform: translateX(1100px);
+      transform: translateX(1000px);
     }
   }
   @keyframes truck-line {
@@ -1070,7 +1115,7 @@ p {
 @media only screen and (min-width: 1200px) {
   @keyframes truck-drive {
     0% {
-      transform: translateX(-1200px);
+      transform: translateX(-100px);
     }
     100% {
       transform: translateX(4400px);

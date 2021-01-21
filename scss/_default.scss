@@ -350,6 +350,11 @@ p {
 
 
   // delivered section 
+.delivered-space-mob {
+  height: 10vw;
+  background-color: $light_gray;
+  margin-top: -2px;
+}
 
 
 
@@ -368,6 +373,13 @@ p {
 
   #delivered {
     padding: 0;
+    height: 60vh;
+    margin-top: -280px;
+    
+  }
+
+  #delivered-text-section {
+    margin-bottom: -200px;
   }
 
   #we-delivered {
@@ -393,6 +405,7 @@ p {
 
   .we-delivered-text {
     margin: 0 auto;
+    margin-right: 15px;
 
 
 
@@ -414,14 +427,14 @@ p {
   }
 
   .truck {
-    animation: truck-drive 4s infinite; 
+    animation: truck-drive 1s infinite; 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
   }
 
   @keyframes truck-drive {
-    0%   { transform: translateX(-300px) }
-    100%   { transform: translateX(600px) }
+    0%   { transform: translateX(-100vw) }
+    100%   { transform: translateX(100vw) }
   }
 
   .truck-line {
@@ -491,12 +504,14 @@ p {
     // margin-top: -1600px;
     background-color: white;
     padding-left: 1rem;
-    margin-bottom: 300px;
+    margin-bottom: -100px;
     // height: fit-content;
   }
+  
+
 
   .care-graphics-container {
-    margin-bottom: 7rem;
+    margin-bottom: 45px;
     margin-top: 13rem;
     padding-left: 0;
     margin-left: -3px;
@@ -529,8 +544,8 @@ p {
   }
   .care-outer {
     position: relative;
-    top: 3px;
-    left: -1px;
+    top: 30px;
+    left: 10px;
   
     // left: 122px;
     // padding-left: 5px;
@@ -598,19 +613,27 @@ p {
   }
 
 //  checks section 
-
-
+#checks {
+  overflow-x: hidden;
+}
+.desktop-check-text {
+  display: none;
+}
+#check-text-section {
+  margin-top: -200px;
+  padding-bottom: 0;
+}
 
 .check-graphics-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 250px;
-  // margin-top: 300px;
+  margin-bottom: 650px;
+  margin-top: -210px;
 }
 
 .checks-row {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .check-graphics {
@@ -626,7 +649,7 @@ p {
 
 .checks-circle-bg {
   position: absolute;
-  top: 11.2px;
+  top: 311.2px;
   left: 27.2px;
   z-index: -9;
 
@@ -634,7 +657,7 @@ p {
 .checks-hands {
   position: absolute;
   z-index: 1;
-  top: 69px;
+  top: 369px;
   left: 23.4px;
   width: 206px;
   height: 88px;
@@ -668,9 +691,9 @@ p {
 .circle-handle-container {
     position: absolute;
     left: -11px;
-    top: 33px;
+    top: 333px;
     // transform: rotate(320deg);
-    animation: check-rotate 2s linear infinite; 
+    animation: check-rotate 1s linear infinite; 
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
 }
@@ -829,6 +852,14 @@ p {
 
 // Webinar section 
 
+#webinar {
+  margin-top: -50px;
+}
+
+.webinar-text-2 {
+  padding-bottom: 50px;
+}
+
 .webinar-graphics-container {
   display: flex;
   flex-direction: column;
@@ -895,6 +926,7 @@ p {
 #trainees {
   padding-bottom: 0px;
   margin-bottom: 0px;
+  margin-top: -370px;
 }
 
 .trainees-row {
@@ -950,7 +982,7 @@ p {
   margin-right: 20px;
   float: right;
   margin-bottom: -1px;
-  margin-top: 60vh;
+  // margin-top: 60vh;
 
 }
 

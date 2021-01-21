@@ -13,10 +13,18 @@
         flex-direction: column;
         
       }
+      .delivered-space-mob {
+        display: none;
+      }
+      #delivered {
+        padding: 0;
+        height: 50vh;
+        margin-top: -230px;
+      }
 
       @keyframes truck-drive {
-        0%   { transform: translateX(-600px) }
-        100%   { transform: translateX(800px) }
+        0%   { transform: translateX(-100px) }
+        100%   { transform: translateX(1400px) }
       }
 
       @keyframes truck-line {
@@ -55,6 +63,10 @@
           transform: rotate(-190deg);
           transform-origin: top left;
         }
+      }
+
+      .desktop-check-text {
+        display: block;
       }
 
       .mh-container {
