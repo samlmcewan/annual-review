@@ -892,6 +892,11 @@ p {
 
 // trainee section 
 
+#trainees {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 .trainees-row {
   overflow: hidden;
 }
@@ -936,27 +941,31 @@ p {
   display: none;
 }
 
-// #ta-1 {
-// opacity: 0;
-// animation: arrow-down 2s linear infinite;
-// animation-direction: alternate-reverse;
-// animation-play-state: paused;
-// animation-delay: calc(var(--scroll) * -1s);
-// }
-// #ta-2 {
-//   animation: arrow-down 2s linear;
-//   animation-delay: 100ms;
-// }
-// #ta-3 {
-//   animation: arrow-down 2s linear;
-//   animation-delay: 200ms;
-// }
-// #ta-4 {
-//   animation: arrow-down 2s linear;
-//   animation-delay: 300ms;
-// }
+.turas-bars-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 131px;
+  margin-right: 20px;
+  float: right;
+  margin-bottom: -1px;
+  margin-top: 60vh;
 
-// @keyframes arrow-down {
-//   from {transform: translateY(-500px); opacity: 0;}
-//   to {transform: translateY(0px); opacity: 1;}
-// }
+}
+
+#turas {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.turas-arrows-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 131px;
+  margin-left: 20px;
+  float: left;
+  // margin-bottom: -1px;
+}

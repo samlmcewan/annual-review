@@ -792,6 +792,11 @@ p {
   top: -340px;
 }
 
+#trainees {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 .trainees-row {
   overflow: hidden;
 }
@@ -834,6 +839,33 @@ p {
 
 .trainee-desktop {
   display: none;
+}
+
+.turas-bars-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 131px;
+  margin-right: 20px;
+  float: right;
+  margin-bottom: -1px;
+  margin-top: 60vh;
+}
+
+#turas {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.turas-arrows-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 131px;
+  margin-left: 20px;
+  float: left;
 }
 
 @media (min-width: 768px) {
@@ -919,6 +951,14 @@ p {
 
   .mh-mob-text {
     display: none;
+  }
+
+  .turas-bars-container {
+    margin-right: 50px;
+  }
+
+  .turas-arrows-container {
+    margin-left: 50px;
   }
 }
 @media (min-width: 992px) {
