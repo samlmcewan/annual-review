@@ -373,13 +373,13 @@ p {
 
   #delivered {
     padding: 0;
-    height: 60vh;
+    height: 50vh;
     margin-top: -280px;
     
   }
 
   #delivered-text-section {
-    margin-bottom: -200px;
+    margin-bottom: -110px;
   }
 
   #we-delivered {
@@ -620,7 +620,7 @@ p {
   display: none;
 }
 #check-text-section {
-  margin-top: -200px;
+  margin-top: -110px;
   padding-bottom: 0;
 }
 
@@ -989,6 +989,8 @@ p {
 #turas {
   padding-top: 0;
   margin-top: 0;
+  padding-bottom: 2vh;
+  // height: 60vh;
 }
 
 .turas-arrows-container {
