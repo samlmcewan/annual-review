@@ -736,7 +736,7 @@ p {
 }
 
 #mh-cog {
-  animation: mh-rotate-cog 250ms linear infinite;
+  animation: mh-rotate-cog 7s linear infinite;
   animation-delay: calc(var(--scroll) * -1s);
 }
 
