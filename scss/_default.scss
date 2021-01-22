@@ -1088,10 +1088,17 @@ p {
 .dental-graphic {
   max-width: 100vw;
 }
+.dental-graphic-1 {
+  align-self: flex-end;
+  // padding-bottom: -20px;
+}
+.dental-graphic-2 {
+  margin-top: -20px;
+}
 
-
-
-
+#dental {
+  margin-bottom: 20vh;
+}
 
 // postgrad section 
 
