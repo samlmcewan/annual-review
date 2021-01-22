@@ -887,7 +887,7 @@ p {
 #turas {
   padding-top: 0;
   margin-top: 0;
-  padding-bottom: 2vh;
+  padding-bottom: 20vh;
 }
 
 .turas-arrows-container {
@@ -904,8 +904,18 @@ p {
   float: right;
 }
 
+.turas-graphic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .data-team-graphic {
   float: right;
+}
+
+#data-team {
+  padding-bottom: 20vh;
 }
 
 .careers-graphic-container {
@@ -1124,6 +1134,10 @@ p {
 
   .trainee-mobile {
     display: none;
+  }
+
+  .turas-text {
+    text-align: right;
   }
 }
 @media only screen and (min-width: 1200px) {

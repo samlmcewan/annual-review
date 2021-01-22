@@ -989,7 +989,7 @@ p {
 #turas {
   padding-top: 0;
   margin-top: 0;
-  padding-bottom: 2vh;
+  padding-bottom: 20vh;
   // height: 60vh;
 }
 
@@ -1007,9 +1007,19 @@ p {
 .turas-click {
   float: right;
 }
+
+.turas-graphic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 // data team section 
 .data-team-graphic {
   float: right;
+}
+
+#data-team {
+  padding-bottom: 20vh;
 }
 
 // careers section 
