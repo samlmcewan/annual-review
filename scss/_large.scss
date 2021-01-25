@@ -22,4 +22,16 @@
       .turas-text {
         text-align: right;
       }
+      .data-graphic-container {
+        // float: right;
+        
+        align-items:flex-end;
+        padding-right: 50px;
+        // width: fit-content;
+        // height: fit-content;
+      }
+      .data-row-container {
+        position: relative;
+        left: 60px;
+      }
 }
