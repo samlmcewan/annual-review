@@ -1016,7 +1016,39 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 250px;
+  height: 250px;
+  margin: auto;
 }
+
+
+.turas-t {
+  position: relative;
+  width: 215px;
+  height: 215px;
+  float: right;
+}
+
+.turas-mouse {
+  position: relative;
+  left: 170px;
+  top: -80px;
+  width: 95px;
+  height: 95px;
+  transform: translateX(100px) translateY(100px);
+  animation: turas-mouse 200ms infinite; 
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+
+@keyframes turas-mouse {
+  
+  0%   { transform: translateX(100px) translateY(100px);}
+  100%   { transform: translateX(0) translateY(0);}
+}
+
+
 // data team section 
 .data-team-graphic {
   float: right;
