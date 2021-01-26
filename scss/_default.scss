@@ -1172,6 +1172,38 @@ p {
 // .balance-text {
 //   overflow-x: hidden;
 // }
+
+
+
+.swing {
+	animation: swing ease-in-out 1500ms infinite alternate;
+	transform-origin: bottom center;
+	/* float: left; */
+	/* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.swing:after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	/* border: 1px solid #999; */
+	top: -10px;
+	left: 50%;
+	z-index: 0;
+	border-bottom: none;
+	border-right: none;
+	transform: rotate(45deg);
+}
+
+@keyframes swing {
+	0% {
+		transform: rotate(4deg);
+	}
+	100% {
+		transform: rotate(-4deg);
+	}
+}
 // dental section 
 .dental-graphic-container {
   display: flex;
@@ -1225,11 +1257,38 @@ p {
     background-color: red;
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
     
+  }
+
+  &#med::before {
+    background-color: #36bdb2;
+  }
+  &#psy::before {
+    background-color: #004785;
+  }
+  &#opt::before {
+    background-color: #4cbeed;
+  }
+  &#den::before {
+    background-color: #ffdd00;
+  }
+  &#pha::before {
+    background-color: #00788a;
+  }
+  &#cli::before {
+    background-color: #e6e6e6;
   }
 }
 
 .pgrad-desktop {
   display: none;
 }
+
+
+
+
+
+
+

@@ -534,7 +534,9 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
             <div class="balance-graphic-container">
-              <img src="assets/balance.svg" class="balance-graphic">
+              <img class="swing" src="assets/balance-top.svg" >
+              <img src="assets/balance-triangle.svg">
+              <!-- <img src="assets/balance.svg" class="balance-graphic"> -->
             </div>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6">
@@ -579,30 +581,28 @@
                 <p class=" gray-text minus-margin-text" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease" data-aos-delay="800" data-aos-once="true">postgraduate education placements across</p>
             </div>
           </div>
-
           <div class="col-sm-12 col-lg-3 pgrad-mob">
             <ul>
-              <li class="postgrad-stat">MEDICAL</li>
-              <li class="postgrad-stat">PSYCHOLOGY</li>
-              <li class="postgrad-stat">OPTOMETRY</li>
-              <li class="postgrad-stat">DENTAL</li>
-              <li class="postgrad-stat">PHARMACY</li>
-              <li class="postgrad-stat">CLINICAL SCIENCE</li>
+              <li id="med" class="postgrad-stat">MEDICAL</li>
+              <li id="psy" class="postgrad-stat">PSYCHOLOGY</li>
+              <li id="opt" class="postgrad-stat">OPTOMETRY</li>
+              <li id="den" class="postgrad-stat">DENTAL</li>
+              <li id="pha" class="postgrad-stat">PHARMACY</li>
+              <li id="cli" class="postgrad-stat">CLINICAL SCIENCE</li>
             </ul>
           </div>
-
             <div class="col-sm-12 col-lg-3 pgrad-desktop">
               <ul>
-                <li class="postgrad-stat">MEDICAL</li>
-                <li class="postgrad-stat">PSYCHOLOGY</li>
-                <li class="postgrad-stat">OPTOMETRY</li>
+                <li id="med" class="postgrad-stat">MEDICAL</li>
+                <li id="psy" class="postgrad-stat">PSYCHOLOGY</li>
+                <li id="opt" class="postgrad-stat">OPTOMETRY</li>
               </ul>
             </div>
             <div class="col-sm-12 col-lg-3 pgrad-desktop">
               <ul>
-                <li class="postgrad-stat">DENTAL</li>
-                <li class="postgrad-stat">PHARMACY</li>
-                <li class="postgrad-stat">CLINICAL SCIENCE</li>
+                <li id="den" class="postgrad-stat">DENTAL</li>
+                <li id="pha" class="postgrad-stat">PHARMACY</li>
+                <li id="cli" class="postgrad-stat">CLINICAL SCIENCE</li>
               </ul>
             </div>
         </div>
@@ -610,8 +610,7 @@
     </section>
 
    
-        
-    <!-- <div class="space"></div> -->
+
     
     
 
@@ -627,18 +626,7 @@
         document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
         }, false);
     </script>
-    <!-- Background color body change  -->
-    <!-- <script>
-      const [red, green, blue] = [69, 111, 225]
-const section1 = document.querySelector('.section')
-
-window.addEventListener('scroll', () => {
-  let y = 1 + (window.scrollY || window.pageYOffset) / 150
-  y = y < 1 ? 1 : y // ensure y is always >= 1 (due to Safari's elastic scroll)
-  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
-  section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-})
-    </script> -->
+    
 
 
     <!-- NES Scripts  -->

@@ -1044,6 +1044,35 @@ p {
   margin-bottom: 20vh;
 }
 
+.swing {
+  animation: swing ease-in-out 1500ms infinite alternate;
+  transform-origin: bottom center;
+  /* float: left; */
+  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.swing:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid #999; */
+  top: -10px;
+  left: 50%;
+  z-index: 0;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
 .dental-graphic-container {
   display: flex;
   flex-direction: column;
@@ -1096,7 +1125,26 @@ p {
   background-color: red;
   position: absolute;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
+}
+.postgrad-stat#med::before {
+  background-color: #36bdb2;
+}
+.postgrad-stat#psy::before {
+  background-color: #004785;
+}
+.postgrad-stat#opt::before {
+  background-color: #4cbeed;
+}
+.postgrad-stat#den::before {
+  background-color: #ffdd00;
+}
+.postgrad-stat#pha::before {
+  background-color: #00788a;
+}
+.postgrad-stat#cli::before {
+  background-color: #e6e6e6;
 }
 
 .pgrad-desktop {
@@ -1229,6 +1277,14 @@ p {
 
   #trainees {
     margin-top: -170px;
+  }
+
+  .pgrad-mob {
+    display: none;
+  }
+
+  .pgrad-desktop {
+    display: block;
   }
 }
 @media (min-width: 992px) {
