@@ -943,6 +943,8 @@ p {
   justify-content: center;
   margin-bottom: -120px;
   padding-bottom: 20px;
+  width: 300px;
+  height: 400px;
 }
 
 #trainee-ste {
@@ -1121,16 +1123,33 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 150px;
+  // float: right;
+  align-items: center;
+  
+  
 }
 
 .careers-graphic {
   max-width: 100vw;
+  position: absolute;
 }
 
 .careers-text {
-  max-width: 50%;
+  // max-width: 50%;
   // font-size: .8rem;
+  // float: right;
 }
+
+.career-ls {
+  position: absolute;
+  // animation: career-scroll 200ms infinite;
+  // animation-play-state: paused;
+  // animation-delay: calc(var(--scroll) * -1s);
+}
+// @keyframes career-scroll {
+//   to {transform: translateX(-40px);}
+// }
 
 // pharmacy section 
 
@@ -1217,9 +1236,11 @@ p {
 .dental-graphic-1 {
   align-self: flex-end;
   max-width: 100vw;
+  width: calc(371px * 0.8);
   // padding-bottom: -20px;
 }
 .dental-graphic-2 {
+  width: calc(345px * 0.8);
   margin-top: -20px;
 }
 
@@ -1236,56 +1257,61 @@ p {
 }
 .postgrad-graphic {
   max-width: 100vw;
+  margin-bottom: 2rem;
 }
 
 .postgrad-stat {
   list-style-type: none;
   padding: 0;
-  padding-left: 30px;
+  // padding-left: 30px;
   border-top: 1px solid $light_gray;
   position: relative;
   // border-bottom: 1px solid $light_gray;
   &:last-of-type {
     border-bottom: 1px solid $light_gray;
   }
+  color: $primary_blue;
+  font-weight: 400;
 
-  &::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    display: inline-flex;
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+  // &::before {
+  //   content: '';
+  //   width: 20px;
+  //   height: 20px;
+  //   display: inline-flex;
+  //   background-color: red;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 0;
+  //   transform: translateY(-50%);
     
-  }
+  // }
 
-  &#med::before {
-    background-color: #36bdb2;
-  }
-  &#psy::before {
-    background-color: #004785;
-  }
-  &#opt::before {
-    background-color: #4cbeed;
-  }
-  &#den::before {
-    background-color: #ffdd00;
-  }
-  &#pha::before {
-    background-color: #00788a;
-  }
-  &#cli::before {
-    background-color: #e6e6e6;
-  }
+  // &#med::before {
+  //   background-color: #36bdb2;
+  // }
+  // &#psy::before {
+  //   background-color: #004785;
+  // }
+  // &#opt::before {
+  //   background-color: #4cbeed;
+  // }
+  // &#den::before {
+  //   background-color: #ffdd00;
+  // }
+  // &#pha::before {
+  //   background-color: #00788a;
+  // }
+  // &#cli::before {
+  //   background-color: #e6e6e6;
+  // }
 }
 
 .pgrad-desktop {
   display: none;
 }
-
+.no-pad {
+  padding-inline-start: 0;
+}
 
 
 

@@ -840,6 +840,8 @@ p {
   justify-content: center;
   margin-bottom: -120px;
   padding-bottom: 20px;
+  width: 300px;
+  height: 400px;
 }
 
 #trainee-ste {
@@ -998,14 +1000,17 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 150px;
+  align-items: center;
 }
 
 .careers-graphic {
   max-width: 100vw;
+  position: absolute;
 }
 
-.careers-text {
-  max-width: 50%;
+.career-ls {
+  position: absolute;
 }
 
 .pharm-graphic-container {
@@ -1087,9 +1092,11 @@ p {
 .dental-graphic-1 {
   align-self: flex-end;
   max-width: 100vw;
+  width: calc(371px * 0.8);
 }
 
 .dental-graphic-2 {
+  width: calc(345px * 0.8);
   margin-top: -20px;
 }
 
@@ -1105,50 +1112,27 @@ p {
 
 .postgrad-graphic {
   max-width: 100vw;
+  margin-bottom: 2rem;
 }
 
 .postgrad-stat {
   list-style-type: none;
   padding: 0;
-  padding-left: 30px;
   border-top: 1px solid #e6e6e6;
   position: relative;
+  color: #004785;
+  font-weight: 400;
 }
 .postgrad-stat:last-of-type {
   border-bottom: 1px solid #e6e6e6;
 }
-.postgrad-stat::before {
-  content: '';
-  width: 20px;
-  height: 20px;
-  display: inline-flex;
-  background-color: red;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-.postgrad-stat#med::before {
-  background-color: #36bdb2;
-}
-.postgrad-stat#psy::before {
-  background-color: #004785;
-}
-.postgrad-stat#opt::before {
-  background-color: #4cbeed;
-}
-.postgrad-stat#den::before {
-  background-color: #ffdd00;
-}
-.postgrad-stat#pha::before {
-  background-color: #00788a;
-}
-.postgrad-stat#cli::before {
-  background-color: #e6e6e6;
-}
 
 .pgrad-desktop {
   display: none;
+}
+
+.no-pad {
+  padding-inline-start: 0;
 }
 
 @media (min-width: 768px) {
@@ -1286,6 +1270,15 @@ p {
   .pgrad-desktop {
     display: block;
   }
+
+  .dental-graphic-1 {
+    width: 371px;
+  }
+
+  .dental-graphic-2 {
+    margin-top: -20px;
+    width: 345px;
+  }
 }
 @media (min-width: 992px) {
   @keyframes truck-line {
@@ -1320,6 +1313,10 @@ p {
   .data-row-container {
     position: relative;
     left: 60px;
+  }
+
+  .careers-text {
+    float: right;
   }
 }
 @media only screen and (min-width: 1200px) {
