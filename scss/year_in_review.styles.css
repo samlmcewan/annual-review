@@ -1147,6 +1147,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 338px;
+  height: 338px;
 }
 
 .postgrad-graphic {
@@ -1154,6 +1156,28 @@ p {
   margin-bottom: 2rem;
   width: 338px;
   height: 338px;
+}
+
+.pgrad-gradient {
+  position: absolute;
+  z-index: 1;
+  animation: pgrad-rotate 3s linear infinite;
+}
+
+@keyframes pgrad-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.pgrad-hat {
+  position: absolute;
+  top: 47px;
+  z-index: 1;
+}
+
+.pgrad-col {
+  display: flex;
+  justify-content: center;
 }
 
 .postgrad-stat {
@@ -1320,6 +1344,11 @@ p {
   #care-measures {
     margin-top: 50px;
   }
+
+  .pgrad-col {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 @media (min-width: 992px) {
   @keyframes truck-line {
@@ -1366,6 +1395,11 @@ p {
 
   #delivered-text-section {
     margin-top: -200px;
+  }
+
+  .pgrad-col {
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 1200px) {
