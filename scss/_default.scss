@@ -764,7 +764,7 @@ font-weight: 600;
 
 .mh-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   flex-wrap: wrap;
   
@@ -1358,6 +1358,10 @@ font-weight: 600;
 .no-pad {
   padding-inline-start: 0;
 }
+
+// .pgrad-text-desktop {
+//   margin-left: -70px;
+// }
 
 
 
