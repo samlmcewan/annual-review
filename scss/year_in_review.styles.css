@@ -92,34 +92,6 @@ p {
   font-weight: 600;
 }
 
-.down-arrows-bounce {
-  animation-name: down-arrows-bounce;
-  animation-timing-function: ease;
-}
-
-@keyframes down-arrows-bounce {
-  0% {
-    transform: translateY(0);
-  }
-  10% {
-    transform: translateY(10px);
-  }
-  30% {
-    transform: translateY(15px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  57% {
-    transform: translateY(2px);
-  }
-  64% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 #education-materials-graphics {
   margin-bottom: 13rem;
 }
@@ -1422,7 +1394,7 @@ p {
   }
 
   #delivered-text-section {
-    margin-top: -100px;
+    margin-top: 0px;
   }
 }
 
