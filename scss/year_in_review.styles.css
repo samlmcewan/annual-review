@@ -1303,6 +1303,10 @@ p {
     margin-right: 50px;
   }
 
+  .care-row {
+    overflow: visible;
+  }
+
   .turas-arrows-container {
     margin-left: 50px;
   }
@@ -1401,6 +1405,10 @@ p {
     display: flex;
     justify-content: center;
   }
+
+  .mh-2 {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1200px) {
   @keyframes truck-line {
@@ -1481,6 +1489,10 @@ p {
 
   #turas {
     margin-bottom: -90px;
+  }
+
+  .mh-2 {
+    display: flex;
   }
 }
 
