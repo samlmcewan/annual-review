@@ -82,8 +82,14 @@ p {
   margin-top: 85px;
   margin-bottom: 0px;
   animation: arrow-opacity 200ms linear infinite;
+  -webkit-animation: arrow-opacity 200ms linear infinite;
+  -moz-animation: arrow-opacity 200ms linear infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes arrow-opacity {
@@ -94,9 +100,29 @@ p {
     opacity: 0;
   }
 }
+@-webkit-keyframes arrow-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes arrow-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .down-arrows {
   animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
   animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
   transform-origin: bottom;
 }
 
@@ -108,16 +134,65 @@ p {
   position: relative;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
 }
 
 .down-arrows-bounce {
   animation-name: down-arrows-bounce;
+  -webkit-animation-name: down-arrows-bounce;
+  -moz-animation-name: down-arrows-bounce;
   animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
 }
 
 @keyframes down-arrows-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+  30% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  57% {
+    transform: translateY(2px);
+  }
+  64% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes down-arrows-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+  30% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  57% {
+    transform: translateY(2px);
+  }
+  64% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes down-arrows-bounce {
   0% {
     transform: translateY(0);
   }
@@ -231,9 +306,17 @@ p {
   width: 25px;
   height: 30px;
   animation: triangle-move 1s linear;
+  -webkit-animation: triangle-move 1s linear;
+  -moz-animation: triangle-move 1s linear;
   animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes triangle-opacity {
@@ -244,7 +327,39 @@ p {
     opacity: 1;
   }
 }
+@-webkit-keyframes triangle-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes triangle-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes triangle-move {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-12px) translateX(-6px);
+  }
+}
+@-webkit-keyframes triangle-move {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-12px) translateX(-6px);
+  }
+}
+@-moz-keyframes triangle-move {
   0% {
     transform: translateY(0) translateX(0);
   }
@@ -266,7 +381,6 @@ p {
 .line-circle-container {
   position: relative;
   top: -50px;
-  /* left: 160px; */
   padding-left: 220px;
 }
 
@@ -284,10 +398,6 @@ p {
   position: absolute;
   left: 200px;
   top: 6px;
-}
-
-.space {
-  margin-bottom: 50rem;
 }
 
 .mask-circle-container {
@@ -317,12 +427,28 @@ p {
   left: -2px;
   display: inline;
   animation: mask-circle-rotate 2s linear infinite;
+  -webkit-animation: mask-circle-rotate 2s linear infinite;
+  -moz-animation: mask-circle-rotate 2s linear infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
   z-index: 99999;
 }
 
 @keyframes mask-circle-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes mask-circle-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes mask-circle-rotate {
   to {
     transform: rotate(360deg);
   }
@@ -400,11 +526,33 @@ p {
   width: 408px;
   height: 194px;
   animation: truck-drive 1s infinite;
+  -webkit-animation: truck-drive 1s infinite;
+  -moz-animation: truck-drive 1s infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes truck-drive {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@-webkit-keyframes truck-drive {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@-moz-keyframes truck-drive {
   0% {
     transform: translateX(-100vw);
   }
@@ -417,21 +565,35 @@ p {
   display: block;
   margin-bottom: 15px;
   animation: truck-line 4s infinite;
+  -webkit-animation: truck-line 4s infinite;
+  -moz-animation: truck-line 4s infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 #truck-line-1 {
   width: 354px;
   animation: truck-line 8s infinite;
+  -webkit-animation: truck-line 8s infinite;
+  -moz-animation: truck-line 8s infinite;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 #truck-line-2 {
   width: 376px;
   padding-left: 40px;
   animation: truck-line 5.5s infinite;
+  -webkit-animation: truck-line 5.5s infinite;
+  -moz-animation: truck-line 5.5s infinite;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 #truck-line-3 {
@@ -439,7 +601,11 @@ p {
   margin-top: 15px;
   padding-left: 40px;
   animation: truck-line 5s infinite;
+  -webkit-animation: truck-line 5s infinite;
+  -moz-animation: truck-line 5s infinite;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 #truck-line-4 {
@@ -447,7 +613,11 @@ p {
   margin-left: 40px;
   padding-left: 40px;
   animation: truck-line 7s infinite;
+  -webkit-animation: truck-line 7s infinite;
+  -moz-animation: truck-line 7s infinite;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 #truck-line-5 {
@@ -455,10 +625,30 @@ p {
   margin-left: 10px;
   padding-left: 40px;
   animation: truck-line 9s infinite;
+  -webkit-animation: truck-line 9s infinite;
+  -moz-animation: truck-line 9s infinite;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes truck-line {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(-900px);
+  }
+}
+@-webkit-keyframes truck-line {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(-900px);
+  }
+}
+@-moz-keyframes truck-line {
   0% {
     transform: translateX(900px);
   }
@@ -510,8 +700,14 @@ p {
   top: 22px;
   z-index: 1;
   animation: care-rotate 300ms linear infinite;
+  -webkit-animation: care-rotate 300ms linear infinite;
+  -moz-animation: care-rotate 300ms linear infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 .care-outer {
@@ -521,8 +717,14 @@ p {
   z-index: 1;
   transform: rotate(-2deg);
   animation: care-rotate-2 1s  infinite;
+  -webkit-animation: care-rotate-2 1s  infinite;
+  -moz-animation: care-rotate-2 1s  infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 .care-line {
@@ -537,7 +739,27 @@ p {
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes care-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes care-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes care-rotate-2 {
+  to {
+    transform: rotate(-362deg);
+  }
+}
+@-webkit-keyframes care-rotate-2 {
+  to {
+    transform: rotate(-362deg);
+  }
+}
+@-moz-keyframes care-rotate-2 {
   to {
     transform: rotate(-362deg);
   }
@@ -653,11 +875,37 @@ p {
   left: -11px;
   top: 333px;
   animation: check-rotate 1s linear infinite;
+  -webkit-animation: check-rotate 1s linear infinite;
+  -moz-animation: check-rotate 1s linear infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes check-rotate {
+  from {
+    transform: rotate(-62deg);
+    transform-origin: top left;
+  }
+  to {
+    transform: rotate(30deg);
+    transform-origin: top left;
+  }
+}
+@-webkit-keyframes check-rotate {
+  from {
+    transform: rotate(-62deg);
+    transform-origin: top left;
+  }
+  to {
+    transform: rotate(30deg);
+    transform-origin: top left;
+  }
+}
+@-moz-keyframes check-rotate {
   from {
     transform: rotate(-62deg);
     transform-origin: top left;
@@ -752,26 +1000,48 @@ p {
 
 #mh-med {
   animation: mh-scale 1.5s  infinite;
+  -webkit-animation: mh-scale 1.5s  infinite;
+  -moz-animation: mh-scale 1.5s  infinite;
   animation-direction: alternate-reverse;
+  -webkit-animation-direction: alternate-reverse;
+  -moz-animation-direction: alternate-reverse;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 #mh-sq {
   animation: mh-rotate-sq 100ms linear infinite;
+  -webkit-animation: mh-rotate-sq 100ms linear infinite;
+  -moz-animation: mh-rotate-sq 100ms linear infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 #mh-sm-c {
   opacity: 0;
   animation: mh-opacity 2s linear infinite;
+  -webkit-animation: mh-opacity 2s linear infinite;
+  -moz-animation: mh-opacity 2s linear infinite;
   animation-direction: alternate-reverse;
+  -webkit-animation-direction: alternate-reverse;
+  -moz-animation-direction: alternate-reverse;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 #mh-cog {
   animation: mh-rotate-cog 7s linear infinite;
+  -webkit-animation: mh-rotate-cog 7s linear infinite;
+  -moz-animation: mh-rotate-cog 7s linear infinite;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes mh-opacity {
@@ -779,7 +1049,27 @@ p {
     opacity: 1;
   }
 }
+@-webkit-keyframes mh-opacity {
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes mh-opacity {
+  to {
+    opacity: 1;
+  }
+}
 @keyframes mh-rotate-sq {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes mh-rotate-sq {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes mh-rotate-sq {
   to {
     transform: rotate(360deg);
   }
@@ -790,7 +1080,29 @@ p {
     transform-origin: center;
   }
 }
+@-webkit-keyframes mh-scale {
+  to {
+    transform: scale(1.3);
+    transform-origin: center;
+  }
+}
+@-moz-keyframes mh-scale {
+  to {
+    transform: scale(1.3);
+    transform-origin: center;
+  }
+}
 @keyframes mh-rotate-cog {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes mh-rotate-cog {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes mh-rotate-cog {
   to {
     transform: rotate(360deg);
   }
@@ -923,6 +1235,7 @@ p {
 #turas {
   padding-top: 0;
   margin-top: 0;
+  margin-bottom: -40px;
 }
 
 .turas-arrows-container {
@@ -963,11 +1276,33 @@ p {
   height: 95px;
   transform: translateX(100px) translateY(100px);
   animation: turas-mouse 200ms infinite;
+  -webkit-animation: turas-mouse 200ms infinite;
+  -moz-animation: turas-mouse 200ms infinite;
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 @keyframes turas-mouse {
+  0% {
+    transform: translateX(100px) translateY(100px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@-webkit-keyframes turas-mouse {
+  0% {
+    transform: translateX(100px) translateY(100px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@-moz-keyframes turas-mouse {
   0% {
     transform: translateX(100px) translateY(100px);
   }
@@ -1022,7 +1357,11 @@ p {
   top: -180px;
   left: 165px;
   animation: care-rotate 6s linear infinite;
+  -webkit-animation: care-rotate 6s linear infinite;
+  -moz-animation: care-rotate 6s linear infinite;
   animation-delay: calc(var(--scroll) * -1s);
+  -webkit-animation-delay: calc(var(--scroll) * -1s);
+  -moz-animation-delay: calc(var(--scroll) * -1s);
 }
 
 .careers-graphic-container {
@@ -1092,9 +1431,9 @@ p {
 
 .swing {
   animation: swing ease-in-out 1500ms infinite alternate;
+  -webkit-animation: swing ease-in-out 1500ms infinite alternate;
+  -moz-animation: swing ease-in-out 1500ms infinite alternate;
   transform-origin: bottom center;
-  /* float: left; */
-  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
 }
 
 .swing:after {
@@ -1102,7 +1441,6 @@ p {
   position: absolute;
   width: 20px;
   height: 20px;
-  /* border: 1px solid #999; */
   top: -10px;
   left: 50%;
   z-index: 0;
@@ -1112,6 +1450,22 @@ p {
 }
 
 @keyframes swing {
+  0% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+@-webkit-keyframes swing {
+  0% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-4deg);
+  }
+}
+@-moz-keyframes swing {
   0% {
     transform: rotate(4deg);
   }
@@ -1162,9 +1516,21 @@ p {
   position: absolute;
   z-index: 1;
   animation: pgrad-rotate 3s linear infinite;
+  -webkit-animation: pgrad-rotate 3s linear infinite;
+  -moz-animation: pgrad-rotate 3s linear infinite;
 }
 
 @keyframes pgrad-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes pgrad-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes pgrad-rotate {
   to {
     transform: rotate(360deg);
   }
@@ -1326,6 +1692,10 @@ p {
 
   .check-text-mobile {
     display: none;
+  }
+
+  #turas {
+    margin-bottom: -100px;
   }
 
   .pgrad-mob {
