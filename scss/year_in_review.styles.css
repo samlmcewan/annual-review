@@ -1354,7 +1354,7 @@ p {
   position: relative;
   width: 147px;
   height: 147px;
-  top: -180px;
+  top: -20px;
   left: 165px;
   animation: care-rotate 6s linear infinite;
   -webkit-animation: care-rotate 6s linear infinite;
@@ -1645,6 +1645,7 @@ p {
   .data-circle {
     width: 167px;
     height: 167px;
+    top: -180px;
   }
 
   @keyframes check-rotate {
