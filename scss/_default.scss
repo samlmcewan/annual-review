@@ -1277,6 +1277,7 @@ font-weight: 600;
 .data-row {
   z-index: 2;
   position: relative;
+  top: 0;
   width: 234px;
   height: 45px;
 
@@ -1297,7 +1298,7 @@ font-weight: 600;
   position: relative;
   width: 147px;
   height: 147px;
-  top: -100px;
+  top: -800px;
   left: 165px;
   animation: care-rotate 6s linear infinite;
   -webkit-animation: care-rotate 6s linear infinite;
