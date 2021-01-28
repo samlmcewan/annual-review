@@ -1559,7 +1559,7 @@ p {
 }
 
 .pgrad-desktop {
-  display: none;
+  display: none !important;
 }
 
 .no-pad {

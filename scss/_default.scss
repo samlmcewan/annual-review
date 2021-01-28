@@ -1513,7 +1513,7 @@ font-weight: 600;
 }
 
 .pgrad-desktop {
-  display: none;
+  display: none !important;
 }
 .no-pad {
   padding-inline-start: 0;
