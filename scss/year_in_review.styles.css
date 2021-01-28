@@ -538,26 +538,26 @@ p {
 
 @keyframes truck-drive {
   0% {
-    transform: translateX(-100vw);
+    transform: translateX(-170vw);
   }
   100% {
-    transform: translateX(100vw);
+    transform: translateX(60vw);
   }
 }
 @-webkit-keyframes truck-drive {
   0% {
-    transform: translateX(-100vw);
+    transform: translateX(-170vw);
   }
   100% {
-    transform: translateX(100vw);
+    transform: translateX(60vw);
   }
 }
 @-moz-keyframes truck-drive {
   0% {
-    transform: translateX(-100vw);
+    transform: translateX(-170vw);
   }
   100% {
-    transform: translateX(100vw);
+    transform: translateX(60vw);
   }
 }
 .truck-line {
@@ -1567,6 +1567,30 @@ p {
 }
 
 @media (min-width: 768px) {
+  @keyframes truck-drive {
+    0% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+  @-webkit-keyframes truck-drive {
+    0% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+  @-moz-keyframes truck-drive {
+    0% {
+      transform: translateX(-100vw);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
   .truck-line {
     margin-bottom: 15px;
     animation: truck-line 4s infinite;

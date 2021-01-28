@@ -487,16 +487,16 @@ font-weight: 600;
   }
 
   @keyframes truck-drive {
-    0%   { transform: translateX(-100vw) }
-    100%   { transform: translateX(100vw) }
+    0%   { transform: translateX(-170vw) }
+    100%   { transform: translateX(60vw) }
   }
   @-webkit-keyframes truck-drive {
-    0%   { transform: translateX(-100vw) }
-    100%   { transform: translateX(100vw) }
+    0%   { transform: translateX(-170vw) }
+    100%   { transform: translateX(60vw) }
   }
   @-moz-keyframes truck-drive {
-    0%   { transform: translateX(-100vw) }
-    100%   { transform: translateX(100vw) }
+    0%   { transform: translateX(-170vw) }
+    100%   { transform: translateX(60vw) }
   }
 
   .truck-line {

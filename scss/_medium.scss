@@ -1,6 +1,20 @@
 // Medium devices (tablets, 768px and up)
 
 @media (min-width: 768px) {
+
+      @keyframes truck-drive {
+        0%   { transform: translateX(-100vw) }
+        100%   { transform: translateX(100vw) }
+      }
+      @-webkit-keyframes truck-drive {
+        0%   { transform: translateX(-100vw) }
+        100%   { transform: translateX(100vw) }
+      }
+      @-moz-keyframes truck-drive {
+        0%   { transform: translateX(-100vw) }
+        100%   { transform: translateX(100vw) }
+      }
+
     .truck-line {
         margin-bottom: 15px;
         animation: truck-line 4s infinite;
