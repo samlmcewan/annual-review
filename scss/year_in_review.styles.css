@@ -1355,7 +1355,7 @@ p {
   position: relative;
   width: 147px;
   height: 147px;
-  top: -100px;
+  top: -90px;
   left: 165px;
   animation: care-rotate 6s linear infinite;
   -webkit-animation: care-rotate 6s linear infinite;
